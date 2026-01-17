@@ -1,95 +1,404 @@
 <!doctype html>
 <html lang="es-MX">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Su Viaje Neuroquirúrgico en Tijuana | Dr. José Manuel Segovia</title>
-  <meta name="description" content="Guía paso a paso para pacientes: evaluación, preparación, cirugía y recuperación con el Dr. José Manuel Segovia en Tijuana.">
+  <!-- Title + Description (IONOS / SEO) -->
+  <title>Neurocirujano en Tijuana | Dr. José Manuel Segovia – Cirugía de Columna y Cerebro</title>
+  <meta name="description" content="Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Guía para pacientes: evaluación, preparación, tratamiento y recuperación. Agenda tu valoración." />
+  <meta name="robots" content="index,follow" />
 
-  <link rel="canonical" href="https://neurocirujanosentijuana.com/">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://neurocirujanosentijuana.com/" />
 
   <!-- Icons -->
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_MX">
-  <meta property="og:title" content="Su Viaje Neuroquirúrgico en Tijuana">
-  <meta property="og:description" content="Atención neuroquirúrgica profesional en Tijuana.">
-  <meta property="og:url" content="https://neurocirujanosentijuana.com/">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Neurocirujano en Tijuana | Dr. José Manuel Segovia" />
+  <meta property="og:description" content="Guía para pacientes: evaluación, preparación, tratamiento y recuperación. Agenda tu valoración." />
+  <meta property="og:url" content="https://neurocirujanosentijuana.com/" />
+  <!-- Si tienes og-image.jpg en la raíz, esto ayuda mucho -->
+  <meta property="og:image" content="https://neurocirujanosentijuana.com/og-image.jpg" />
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="es-MX" href="https://neurocirujanosentijuana.com/">
-  <link rel="alternate" hreflang="en-US" href="https://neurosurgerytijuana.com/">
-  <link rel="alternate" hreflang="x-default" href="https://neurocirujanosentijuana.com/">
+  <link rel="alternate" hreflang="es-MX" href="https://neurocirujanosentijuana.com/" />
+  <link rel="alternate" hreflang="en-US" href="https://neurosurgerytijuana.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://neurocirujanosentijuana.com/" />
 
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #0b1b2b; }
-    header, main, footer { max-width: 1000px; margin: auto; padding: 20px; }
-    header { display: flex; justify-content: space-between; align-items: center; }
-    nav a { margin-left: 15px; text-decoration: none; color: #0b2a4a; font-weight: bold; }
-    h1 { font-size: 34px; }
-    section { margin-top: 40px; }
-    .cta { background: #0b2a4a; color: white; padding: 14px 20px; text-decoration: none; border-radius: 10px; }
-    footer { font-size: 14px; color: #555; }
+    :root{
+      --bg:#ffffff;
+      --text:#0b1b2b;
+      --muted:#445364;
+      --brand:#0b2a4a;
+      --brand2:#0f3b66;
+      --card:#f5f7fa;
+      --border:#e6ebf2;
+      --radius:16px;
+      --shadow: 0 10px 30px rgba(11,42,74,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.5;
+    }
+    a{color:var(--brand2)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:20px;top:20px;width:auto;height:auto;background:#fff;padding:10px;border:1px solid var(--border);border-radius:10px;z-index:999}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(255,255,255,.9);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      text-decoration:none; color:inherit;
+      min-width:240px;
+    }
+    .brand img{height:40px;width:auto}
+    .brand strong{display:block; font-size:14px; letter-spacing:.2px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+    nav ul{list-style:none; margin:0; padding:0; display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{font-weight:650; text-decoration:none; color:var(--brand)}
+    nav a:hover{text-decoration:underline}
+
+    .hero{
+      padding:42px 0 20px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:24px;
+      align-items:start;
+    }
+    .kicker{color:var(--muted); font-weight:650; letter-spacing:.2px}
+    h1{margin:10px 0 12px; font-size:40px; line-height:1.08}
+    .lead{color:var(--muted); font-size:18px; margin:0 0 18px}
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px; border-radius:12px; border:1px solid var(--border);
+      text-decoration:none; font-weight:750;
+    }
+    .btn.primary{background:var(--brand); color:#fff; border-color:var(--brand)}
+    .btn.primary:hover{background:var(--brand2); border-color:var(--brand2)}
+    .btn.ghost{background:#fff; color:var(--brand)}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .mini{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+    .mini .pill{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    section{padding:26px 0}
+    section h2{font-size:26px; margin:0 0 12px}
+    section h3{margin:14px 0 8px; font-size:18px}
+    .grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px}
+    .grid3{display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px}
+    .listClean{margin:0; padding-left:18px; color:var(--muted)}
+    .muted{color:var(--muted)}
+    .divider{border-top:1px solid var(--border); margin:18px 0}
+
+    details{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:12px 14px;
+    }
+    details + details{margin-top:10px}
+    summary{cursor:pointer; font-weight:750; color:var(--brand)}
+    footer{
+      border-top:1px solid var(--border);
+      padding:22px 0 34px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width: 880px){
+      .heroGrid{grid-template-columns: 1fr}
+      h1{font-size:34px}
+      .grid3,.grid2,.mini{grid-template-columns:1fr}
+      .brand{min-width:auto}
+    }
   </style>
+
+  <!-- Schema.org (ajustaremos con dirección exacta cuando la confirmes) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Physician",
+    "name":"Dr. José Manuel Segovia",
+    "medicalSpecialty":"Neurosurgery",
+    "url":"https://neurocirujanosentijuana.com/",
+    "telephone":"+1-664-635-1809",
+    "email":"info@neurocirujanosentijuana.com",
+    "areaServed":"Tijuana, Baja California, MX"
+  }
+  </script>
 </head>
 
 <body>
-<header>
-  <strong>Dr. José Manuel Segovia</strong>
-  <nav>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#proceso">Proceso</a>
-    <a href="#faq">FAQ</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
 
-<main>
-  <section>
-    <h1>Su Viaje Neuroquirúrgico en Tijuana</h1>
-    <p>Una guía clara y humana para pacientes que buscan atención neuroquirúrgica segura y profesional.</p>
-    <a class="cta" href="#contacto">Agendar evaluación</a>
-  </section>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="/">
+          <!-- Cambia /logo.png por tu archivo real -->
+          <img src="/logo.png" alt="Logo del Dr. José Manuel Segovia" />
+          <div>
+            <strong>Dr. José Manuel Segovia</strong>
+            <span>Neurocirujano en Tijuana</span>
+          </div>
+        </a>
 
-  <section id="beneficios">
-    <h2>Beneficios</h2>
-    <p>Atención personalizada, experiencia médica, acompañamiento completo y ubicación estratégica en Tijuana.</p>
-  </section>
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-  <section id="proceso">
-    <h2>Proceso</h2>
-    <p>Evaluación → Preparación → Tratamiento → Recuperación</p>
-  </section>
+  <main id="contenido">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+          <div>
+            <div class="kicker">Guía para pacientes</div>
+            <h1>Su Viaje Neuroquirúrgico en Tijuana</h1>
+            <p class="lead">
+              Evaluación, preparación, tratamiento y recuperación — explicado paso a paso para que tomes decisiones con confianza.
+            </p>
 
-  <section id="faq">
-    <h2>Preguntas frecuentes</h2>
-    <p>Teléfono: <a href="tel:+16646351809">664-635-1809</a><br>
-    Email: <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a></p>
-  </section>
+            <div class="ctaRow">
+              <a class="btn primary" href="#contacto">Agendar valoración</a>
+              <a class="btn ghost" href="#proceso">Ver el proceso</a>
+            </div>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Agenda tu evaluación con el Dr. José Manuel Segovia.</p>
-  </section>
+            <div class="mini" aria-label="Datos rápidos">
+              <div class="pill"><strong>Tel:</strong> <a href="tel:+16646351809">664-635-1809</a></div>
+              <div class="pill"><strong>Email:</strong> <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a></div>
+            </div>
+          </div>
 
-  <section>
-    <h2>Legal</h2>
-    <ul>
-      <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
-      <li><a href="/condiciones-de-servicio.html">Condiciones de Servicio</a></li>
-    </ul>
-  </section>
-</main>
+          <aside class="card" aria-label="Resumen">
+            <h2 style="margin-top:0">¿Qué encontrarás aquí?</h2>
+            <ul class="listClean">
+              <li>Qué esperar en tu evaluación</li>
+              <li>Cómo prepararte antes del procedimiento</li>
+              <li>Opciones de tratamiento</li>
+              <li>Recuperación y seguimiento</li>
+            </ul>
+            <div class="divider"></div>
+            <p class="muted" style="margin:0">
+              *Contenido informativo. No sustituye una consulta médica.*
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2026 Dr. José Manuel Segovia. Todos los derechos reservados.</p>
-</footer>
+    <!-- BENEFICIOS -->
+    <section id="beneficios">
+      <div class="container">
+        <h2>Beneficios</h2>
+        <p class="muted">Aquí pegaremos los bullets exactos del PDF (misma intención, mejor legibilidad).</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Atención personalizada</h3>
+            <p class="muted">[Pegar texto del PDF: beneficio #1]</p>
+          </div>
+          <div class="card">
+            <h3>Experiencia y confianza</h3>
+            <p class="muted">[Pegar texto del PDF: beneficio #2]</p>
+          </div>
+          <div class="card">
+            <h3>Seguimiento y claridad</h3>
+            <p class="muted">[Pegar texto del PDF: beneficio #3]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso">
+      <div class="container">
+        <h2>Proceso</h2>
+        <p class="muted">Esta sección replica la estructura del PDF (Evaluación → Preparación → Tratamiento → Recuperación).</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>1) Evaluación</h3>
+            <ul class="listClean">
+              <li>[Pegar punto 1 del PDF]</li>
+              <li>[Pegar punto 2 del PDF]</li>
+              <li>[Pegar punto 3 del PDF]</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>2) Preparación</h3>
+            <ul class="listClean">
+              <li>[Pegar punto 1 del PDF]</li>
+              <li>[Pegar punto 2 del PDF]</li>
+              <li>[Pegar punto 3 del PDF]</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>3) Tratamiento</h3>
+            <ul class="listClean">
+              <li>[Pegar punto 1 del PDF]</li>
+              <li>[Pegar punto 2 del PDF]</li>
+              <li>[Pegar punto 3 del PDF]</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>4) Recuperación</h3>
+            <ul class="listClean">
+              <li>[Pegar punto 1 del PDF]</li>
+              <li>[Pegar punto 2 del PDF]</li>
+              <li>[Pegar punto 3 del PDF]</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:18px">
+          <a class="btn primary" href="#contacto">Quiero agendar</a>
+          <a class="btn ghost" href="#preguntas">Leer preguntas frecuentes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="preguntas">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <p class="muted">Aquí pondremos las preguntas y respuestas tal como vienen en tu PDF.</p>
+
+        <details>
+          <summary>¿Cómo agendo una evaluación?</summary>
+          <div class="muted" style="margin-top:8px">
+            Llama al <a href="tel:+16646351809">664-635-1809</a> o escribe a
+            <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a>.
+          </div>
+        </details>
+
+        <details>
+          <summary>[Pregunta del PDF #2]</summary>
+          <div class="muted" style="margin-top:8px">[Respuesta del PDF #2]</div>
+        </details>
+
+        <details>
+          <summary>[Pregunta del PDF #3]</summary>
+          <div class="muted" style="margin-top:8px">[Respuesta del PDF #3]</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <div class="card">
+          <p class="muted" style="margin-top:0">
+            [Pegar dirección/indicaciones del PDF si vienen ahí. Si no, dime la dirección exacta y la pongo.]
+          </p>
+          <p style="margin-bottom:0">
+            <strong>Mapa:</strong> [Aquí luego agregamos un link a Google Maps (me lo pasas y lo inserto)]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="grid2">
+          <div class="card">
+            <h3>Agenda tu valoración</h3>
+            <p class="muted">Elige el canal más cómodo para ti.</p>
+            <p style="margin:0">
+              <strong>Tel:</strong> <a href="tel:+16646351809">664-635-1809</a><br />
+              <strong>Email:</strong> <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a>
+            </p>
+            <div class="ctaRow">
+              <a class="btn primary" href="tel:+16646351809">Llamar</a>
+              <a class="btn ghost" href="mailto:info@neurocirujanosentijuana.com">Enviar correo</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Legal</h3>
+            <p class="muted">Políticas requeridas para confianza y cumplimiento.</p>
+            <ul class="listClean">
+              <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+              <li><a href="/condiciones-de-servicio.html">Condiciones de Servicio</a></li>
+            </ul>
+            <p class="muted" style="margin-bottom:0">Versión en inglés: <a href="https://neurosurgerytijuana.com/">neurosurgerytijuana.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+        <div>© <span id="y"></span> Dr. José Manuel Segovia. Todos los derechos reservados.</div>
+        <div class="muted">Tijuana, Baja California</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -4,14 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Title + Description (IONOS / SEO) -->
   <title>Neurocirujano en Tijuana | Dr. José Manuel Segovia – Cirugía de Columna y Cerebro</title>
-  <meta name="description" content="Bienvenido a su guía completa sobre procedimientos neuroquirúrgicos en Tijuana, México. Hemos diseñado este recurso para proporcionarle información valiosa, haciendo su viaje médico más fluido y mejor informado.
-
-Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Guía para pacientes: evaluación, preparación, tratamiento y recuperación. Agenda tu valoración." />
+  <meta name="description" content="Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Evaluación clara, opciones de tratamiento y acompañamiento en cada etapa. Agenda tu valoración." />
   <meta name="robots" content="index,follow" />
 
-  <!-- Canonical -->
   <link rel="canonical" href="https://neurocirujanosentijuana.com/" />
 
   <!-- Icons -->
@@ -25,9 +21,9 @@ Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Guía par
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_MX" />
   <meta property="og:title" content="Neurocirujano en Tijuana | Dr. José Manuel Segovia" />
-  <meta property="og:description" content="Guía para pacientes: evaluación, preparación, tratamiento y recuperación. Agenda tu valoración." />
+  <meta property="og:description" content="Evaluación, preparación, tratamiento y recuperación con claridad. Agenda tu valoración." />
   <meta property="og:url" content="https://neurocirujanosentijuana.com/" />
-  <!-- Si tienes og-image.jpg en la raíz, esto ayuda mucho -->
+  <!-- Si NO tienes /og-image.jpg, puedes borrar la siguiente línea -->
   <meta property="og:image" content="https://neurocirujanosentijuana.com/og-image.jpg" />
 
   <!-- Hreflang -->
@@ -36,17 +32,17 @@ Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Guía par
   <link rel="alternate" hreflang="x-default" href="https://neurocirujanosentijuana.com/" />
 
   <style>
-:root{
-  --bg:#00002E;         /* page background / card background (Gamma) */
-  --text:#FFFFFF;       /* body text */
-  --muted:rgba(255,255,255,.78);
-  --brand:#F2B42D;      /* primary accent */
-  --brand2:#48A8E2;     /* secondary accent (links) */
-  --card:#00002E;       /* cards same as background (Gamma style) */
-  --border:rgba(255,255,255,.12);
-  --radius:16px;
-  --shadow: 0 12px 32px rgba(0,0,0,.35);
-}
+    :root{
+      --bg:#00002E;
+      --text:#FFFFFF;
+      --muted:rgba(255,255,255,.78);
+      --brand:#F2B42D;
+      --brand2:#48A8E2;
+      --card:rgba(0,0,46,.92);
+      --border:rgba(255,255,255,.12);
+      --radius:16px;
+      --shadow: 0 12px 32px rgba(0,0,0,.35);
+    }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
@@ -54,20 +50,19 @@ Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Guía par
       background:var(--bg);
       color:var(--text);
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height:1.5;
+      line-height:1.55;
     }
     a{color:var(--brand2)}
     .container{max-width:1100px;margin:0 auto;padding:0 20px}
     .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip:focus{left:20px;top:20px;width:auto;height:auto;background:#fff;padding:10px;border:1px solid var(--border);border-radius:10px;z-index:999}
+    .skip:focus{left:20px;top:20px;width:auto;height:auto;background:#fff;color:#000;padding:10px;border:1px solid #ddd;border-radius:10px;z-index:999}
 
-header{
-  position:sticky; top:0; z-index:50;
-  background:rgba(0,0,46,.88);
-  backdrop-filter: blur(10px);
-  border-bottom:1px solid var(--border);
-}
-nav a{color:var(--text)}
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(0,0,46,.88);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+    }
     .nav{
       display:flex; align-items:center; justify-content:space-between;
       padding:14px 0;
@@ -76,61 +71,66 @@ nav a{color:var(--text)}
     .brand{
       display:flex; align-items:center; gap:12px;
       text-decoration:none; color:inherit;
-      min-width:240px;
     }
-    .brand img{height:40px;width:auto}
+    .brand img{
+      height:44px;width:44px;border-radius:999px;object-fit:cover;
+      border:1px solid rgba(255,255,255,.25)
+    }
     .brand strong{display:block; font-size:14px; letter-spacing:.2px}
     .brand span{display:block; font-size:12px; color:var(--muted)}
+
     nav ul{list-style:none; margin:0; padding:0; display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
-    nav a{font-weight:650; text-decoration:none; color:var(--brand)}
+    nav a{font-weight:700; text-decoration:none; color:var(--text)}
     nav a:hover{text-decoration:underline}
 
-    .hero{
-      padding:42px 0 20px;
-    }
+    .hero{padding:38px 0 10px;}
     .heroGrid{
       display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:24px;
+      grid-template-columns: 1fr 1fr;
+      gap:20px;
       align-items:start;
     }
-    .kicker{color:var(--muted); font-weight:650; letter-spacing:.2px}
+    .kicker{color:var(--muted); font-weight:700; letter-spacing:.2px}
     h1{margin:10px 0 12px; font-size:40px; line-height:1.08}
     .lead{color:var(--muted); font-size:18px; margin:0 0 18px}
-    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center;
       padding:12px 16px; border-radius:12px; border:1px solid var(--border);
-      text-decoration:none; font-weight:750;
+      text-decoration:none; font-weight:800;
     }
-.btn.primary{background:var(--brand); color:#00002E; border-color:var(--brand)}
-.btn.primary:hover{filter:brightness(.95)}
-.btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
-.card{
-  background: rgba(0,0,46,.92);
-  border:1px solid var(--border);
-  border-radius:var(--radius);
-  box-shadow: var(--shadow);
-  padding:18px;
-}
+    .btn.primary{background:var(--brand); color:#00002E; border-color:var(--brand)}
+    .btn.primary:hover{filter:brightness(.95)}
+    .btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
+
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+
     .mini{
       display:grid;
       grid-template-columns: repeat(2, minmax(0,1fr));
-      gap:12px;
+      gap:10px;
       margin-top:14px;
     }
     .mini .pill{
-      background:#fff;
+      background: rgba(255,255,255,.06);
       border:1px solid var(--border);
       border-radius:14px;
       padding:12px;
       font-size:13px;
       color:var(--muted);
     }
+    .mini .pill a{color:var(--text)}
 
-    section{padding:26px 0}
+    section{padding:24px 0}
     section h2{font-size:26px; margin:0 0 12px}
-    section h3{margin:14px 0 8px; font-size:18px}
+    section h3{margin:0 0 8px; font-size:18px}
     .grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px}
     .grid3{display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px}
     .listClean{margin:0; padding-left:18px; color:var(--muted)}
@@ -138,13 +138,15 @@ nav a{color:var(--text)}
     .divider{border-top:1px solid var(--border); margin:18px 0}
 
     details{
-      background:#fff;
+      background: rgba(255,255,255,.06);
       border:1px solid var(--border);
       border-radius:14px;
       padding:12px 14px;
     }
     details + details{margin-top:10px}
-    summary{cursor:pointer; font-weight:750; color:var(--brand)}
+    summary{cursor:pointer; font-weight:800; color:var(--brand)}
+    summary::-webkit-details-marker{display:none}
+
     footer{
       border-top:1px solid var(--border);
       padding:22px 0 34px;
@@ -152,15 +154,14 @@ nav a{color:var(--text)}
       font-size:14px;
     }
 
-    @media (max-width: 880px){
+    @media (max-width: 920px){
       .heroGrid{grid-template-columns: 1fr}
       h1{font-size:34px}
       .grid3,.grid2,.mini{grid-template-columns:1fr}
-      .brand{min-width:auto}
     }
   </style>
 
-  <!-- Schema.org (ajustaremos con dirección exacta cuando la confirmes) -->
+  <!-- Schema.org (básico y limpio; lo podemos enriquecer después) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -181,22 +182,22 @@ nav a{color:var(--text)}
   <header>
     <div class="container">
       <div class="nav">
-<a class="brand" href="/">
-  <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" style="height:44px;width:44px;border-radius:999px;object-fit:cover;border:1px solid rgba(255,255,255,.25)" />
-  <div>
-    <strong>Dr. José Manuel Segovia</strong>
-    <span>Neurocirujano en Tijuana</span>
-  </div>
-</a>
+        <a class="brand" href="/">
+          <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" />
+          <div>
+            <strong>Dr. José Manuel Segovia</strong>
+            <span>Neurocirujano en Tijuana</span>
+          </div>
+        </a>
 
         <nav aria-label="Navegación principal">
           <ul>
-            <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#doctor">El Doctor</a></li>
             <li><a href="#preguntas">Preguntas</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#doctor">El Doctor</a></li>
           </ul>
         </nav>
       </div>
@@ -209,18 +210,19 @@ nav a{color:var(--text)}
       <div class="container">
         <div class="heroGrid">
           <div class="card">
-  <img 
-    src="/assets/hero.jpg" 
-    alt="Procedimiento neuroquirúrgico en quirófano en Tijuana"
-    style="width:100%; height:auto; border-radius:14px;"
-  />
-</div>
+            <img
+              src="/assets/hero.jpg"
+              alt="Procedimiento neuroquirúrgico en quirófano en Tijuana"
+              style="width:100%; height:auto; border-radius:14px; border:1px solid rgba(255,255,255,.12)"
+              loading="eager"
+            />
+          </div>
 
           <div>
             <div class="kicker">Guía para pacientes</div>
             <h1>Su Viaje Neuroquirúrgico en Tijuana</h1>
             <p class="lead">
-              Evaluación, preparación, tratamiento y recuperación — explicado paso a paso para que tomes decisiones con confianza.
+              Mi objetivo es que usted entienda su diagnóstico y sus opciones. Aquí le explico, paso a paso, qué esperar antes, durante y después de su atención.
             </p>
 
             <div class="ctaRow">
@@ -232,175 +234,11 @@ nav a{color:var(--text)}
               <div class="pill"><strong>Tel:</strong> <a href="tel:+16646351809">664-635-1809</a></div>
               <div class="pill"><strong>Email:</strong> <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a></div>
             </div>
-          </div>
 
-          <aside class="card" aria-label="Resumen">
-            <h2 style="margin-top:0">¿Qué encontrarás aquí?</h2>
-            <ul class="listClean">
-              <li>Qué esperar en tu evaluación</li>
-              <li>Cómo prepararte antes del procedimiento</li>
-              <li>Opciones de tratamiento</li>
-              <li>Recuperación y seguimiento</li>
-            </ul>
             <div class="divider"></div>
             <p class="muted" style="margin:0">
-              *Contenido informativo. No sustituye una consulta médica.*
+              *Este sitio es informativo y no sustituye una consulta médica.*
             </p>
-          </aside>
-        </div>
-      </div>
-    </section>
-<section id="doctor">
-  <div class="container">
-    <h2>Conoce al Dr. José Manuel Segovia</h2>
- <p class="muted">
-          Soy un neurocirujano certificado con amplia experiencia y un compromiso inquebrantable para brindar una atención excepcional al paciente. Entiendo las ansiedades que acompañan a los procedimientos neuroquirúrgicos y estoy aquí para guiarle en cada paso del camino.
-
-El Dr. Segovia combina una avanzada pericia técnica con una atención compasiva, asegurando que cada paciente reciba atención personalizada durante todo su tratamiento. Con formación en instituciones de prestigio y años de resultados quirúrgicos exitosos, el Dr. Segovia se ha consolidado como un nombre de confianza en la atención neuroquirúrgica en Tijuana.
-
-Los pacientes valoran el enfoque exhaustivo del Dr. Segovia en las consultas, donde se toma el tiempo para explicar las condiciones, las opciones de tratamiento y los resultados esperados en términos claros y comprensibles.
-   Médico Cirujano egresado de la UNAM. En mi practica profesional en el consultorio, tengo como factores importantes de la consulta que el paciente se sienta comodo y relajado, le pido que me explique sus molestias y hago una historia clínica para conocer al paciente mejor, no solamente en su enfermedad sino como una persona en su medio familiar y laboral.
-Curriculum
-Carrera de Médico Cirujano en Facultad Nacional de Medicina UNAM.
-Especialidad en Neurocirugía Centro Médico Nacional IMSS.
-Certificación por el CONSEJO MEXICANO DE NEUROCIRUGIA y RECERTIFICACION ACTUAL VIGENTE hasta Diciembre 2016.
-Registro de Profesiones 168441
-Registro Secretaria de Salubridad 32388
-Cedula de especialista en Neurocirugía 15783.
-POSICIONES HOSPITALARIAS
-
-Neurocirujano en Hospitales de Pediatra y Centro Médico de Occidente IMSS Guadalajara Jalisco de 1974 a 1985.
-Neurocirujano Hospital del ISSSTE l985 a 1992 en Tijuana B.C.
-Neurocirujano en práctica privada en diferentes Hospitales de Tijuana 1985.
-Neurocirujano del Hospital Ángeles Tijuana desde 2005 hasta la fecha.
-
-MEMBRESIAS A SOCIEDADES ACADEMICAS
-
-Sociedad Mexicana de Cirugía Neurológica AC desde l977 Número de socio 97.
-Sociedad de Neurología y Neurocirugía de Tijuana
-
-   Experto en:
-
-Terapias
-Artrodesis cervical anterior
-Cambio o retirada de válvula en hidrocefálias
-Cirugía de craneofaringioma
-Cirugía de hernia discal cervical
-Cirugía de la estenosis raquídea
-Cirugía de lesiones cerebrales
-Cirugía de malformaciones espinales
-Cirugía de reparación de tumores cerebrales
-Cirugía fosa posterior
-Cirugía malformaciones vasculares cerebrales
-Craneotomía de hematoma subdural
-Estimulación magnética transcraneal repetitiva
-
-Enfermedades y trastornos
-
-Aneurisma cerebral
-Depresión crónica
-Depresión crónica
-Enfermedad de Alzheimer
-Hemorragia cerebral
-Hernia de disco
-Hidrocefalia
-Insomnio crónico
-Mal de Parkinson
-Trastorno de ansiedad generalizada
-Trastorno del espectro autista (TEA)
-Tumor cerebral en adultos
-
-   
-        </p>
-    <div class="grid2">
-      <div class="card">
-        <img
-          src="/assets/dr-logo.jpg"
-          alt="Dr. José Manuel Segovia, neurocirujano"
-          style="width:100%;max-width:360px;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.12)"
-        />
-      </div>
-
-      <div class="card">
-        <h3 style="margin-top:0">Atención neuroquirúrgica con claridad y acompañamiento</h3>
-        <p class="muted">
-          En mi practica profesional en el consultorio, tengo como factores importantes de la consulta que el paciente se sienta comodo y relajado, le pido que me explique sus molestias y hago una historia clínica para conocer al paciente mejor, no solamente en su enfermedad sino como una persona en su medio familiar y laboral.
-Efectuó un cuidadoso examen fisico y neurologico y  después le explico en forma sencilla el diagnostico clínico y los examenes de laboratorio y radiológicos que son necesarios para confirmar el diagnostico.  Con los resultados de los exámenes solicitados en la siguiente consulta, explico claramente el diagnostico y el tratamiento medico.
-Inovamos con una nueva tecnología unica en Tijuana, llamada ESTIMULACION MAGNETICA TRANSCRANEAL  Repetitiva para el tratamiento de enfermedades neurológicas y psiquiátricas como depresión, ansiedad, trastornos del sueño, Parkinson, autismo, fibromialgia, migraña refractaria a tratamiento medico.
-
-          Clínica de la Columna Vertebral
-
-La columna está formada por huesos llamados vértebras, separados por cojines suaves (discos). La presión sobre los nervios que se ramifican de la médula espinal puede producir dolor, entumecimiento, hormigueo o debilidad y puede ser causada por:
-Discos lesionados que protruyen entre las vértebras (disco herniado).
-Lesiones óseas (fracturas).
-Estrechamiento del espacio intervertebral (estenosis espinal).
-Crecimientos (tumores).
-Cavidades infectadas (abscesos).
-Cavidades con sangre (hematomas).
-          
-          Consulta Neurologica
-
-Ofrece servicios de consulta y atención al paciente con enfermedades del sistema nervioso central y periférico. Los padecimientos más comunes son:
-Dolor de Cabeza *incluyendo migrañas y tensiónales
-Epilepsia *crisis convulsivas
-Mareo y Vértigo
-Dolor de espalda baja (lumbalgia y de región dorsal y de la nuca)
-Parálisis facial
-Demencias (Alzheimer)
-Enfermedad de Parkinson
-Enfermedades Vasculares cerebrales (embolias, hemorragias e infartos cerebrales)
-Esclerosis múltiple
-Tumores cerebrales y tumores Hipofisarios.
-Enfermedades infecciosas y parasitarias del sistema nervioso Síndrome de Ansiedad y depresión.          
-
-ESTIMULACION MAGNETICA TRANSCRANEAL
-En mi practica profesional en el consultorio, tengo como factores importantes de la consulta que el paciente se sienta comodo y relajado, le pido que me explique sus molestias y hago una historia clínica para conocer al paciente mejor, no solamente en su enfermedad sino como una persona en su medio familiar y laboral.
-
-Efectuó un cuidadoso examen fisico y neurologico y después le explico en forma sencilla el diagnostico clínico y los examenes de laboratorio y radiológicos que son necesarios para confirmar el diagnostico. Con los resultados de los exámenes solicitados en la siguiente consulta, explico claramente el diagnostico y el tratamiento medico.
-
-Inovamos con una nueva tecnología unica en Tijuana, llamada ESTIMULACION MAGNETICA TRANSCRANEAL Repetitiva para el tratamiento de enfermedades neurológicas y psiquiátricas como depresión, ansiedad, trastornos del sueño, Parkinson, autismo, fibromialgia, migraña refractaria a tratamiento medico.
-Inovamos con una nueva tecnología unica en Tijuana, llamada Estimulacion Magnetica Transcraneal Repetitiva para el tratamiento de enfermedades neurológicas y psiquiátricas como depresión, ansiedad, trastornos del sueño, Parkinson, autismo, fibromialgia, migraña refractaria a tratamiento medico.
-Esta técnica, que utiliza un pequeño dispositivo colocado en el cuero cabelludo para generar pulsos magnéticos cortos, ya se está utilizando para normalizar la actividad eléctrica en los cerebros de las personas con epilepsia. Los ensayos preliminares de rTMS en humanos, financiados por el NIDCD, están ayudando a los investigadores a identificar los mejores lugares en el cerebro para estimular con el fin de suprimir el ruido en los oídos o tinnitus. Los investigadores también están buscando formas de identificar qué personas tienen más probabilidades de responder bien a los dispositivos de estimulación.
-        </p>
-        <div class="ctaRow">
-          <a class="btn primary" href="#contacto">Agendar valoración</a>
-          <a class="btn ghost" href="#preguntas">Ver preguntas frecuentes</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- BENEFICIOS -->
-    <section id="beneficios">
-      <div class="container">
-        <h2>Beneficios</h2>
-        <p class="muted">Instalaciones Acreditadas
-
-Muchos hospitales en Tijuana cumplen con estándares internacionales y están acreditados por organizaciones de renombre como la Joint Commission International (JCI) y el Consejo de Salubridad General de México. Estas acreditaciones aseguran que las instalaciones mantengan altos estándares de seguridad del paciente, calidad de atención y excelencia operativa.
-
-Personal Multilingüe
-
-Muchos hospitales cuentan con personal capacitado en inglés, lo que facilita la comunicación para pacientes internacionales. Esto elimina las barreras idiomáticas que de otro modo podrían complicar la atención médica, asegurando que los pacientes comprendan completamente sus planes de tratamiento y puedan comunicar eficazmente sus necesidades e inquietudes.
-
-Atención Personalizada
-
-Los médicos en Tijuana a menudo priorizan la atención personalizada, garantizando la comodidad y comprensión del paciente. La proporción de pacientes por personal es frecuentemente más favorable que en los hospitales de EE. UU., lo que permite una atención más individualizada y un seguimiento durante todo el proceso de tratamiento.
-
-Las instalaciones médicas de Tijuana continúan invirtiendo en equipos de vanguardia para diagnósticos y tratamientos precisos, asegurando que los pacientes reciban atención que cumple o supera los estándares internacionales, manteniendo al mismo tiempo ventajas significativas en costos.</p>
-
-        <div class="grid3">
-          <div class="card">
-            <h3>Atención personalizada</h3>
-            <p class="muted">Cada paciente recibe una evaluación individual, con tiempo para resolver dudas y explicar el diagnóstico y las opciones de tratamiento de forma clara.</p>
-          </div>
-          <div class="card">
-            <h3>Experiencia y confianza</h3>
-            <p class="muted">Atención neuroquirúrgica respaldada por años de práctica clínica, con procedimientos realizados en hospitales certificados de Tijuana.</p>
-          </div>
-          <div class="card">
-            <h3>Seguimiento y claridad</h3>
-            <p class="muted">Desde la primera consulta hasta la recuperación, el paciente cuenta con seguimiento médico y orientación en cada etapa.</p>
           </div>
         </div>
       </div>
@@ -410,82 +248,115 @@ Las instalaciones médicas de Tijuana continúan invirtiendo en equipos de vangu
     <section id="proceso">
       <div class="container">
         <h2>Proceso</h2>
-        <p class="muted">Qué Esperar Durante el Tratamiento
-
-Evaluación Preoperatoria
-
-Será ingresado al hospital y se someterá a evaluaciones preoperatorias, incluyendo análisis de laboratorio y estudios de imagen. Estas evaluaciones exhaustivas ayudan a su equipo médico a confirmar su diagnóstico y finalizar el enfoque quirúrgico, asegurando que el procedimiento se adapte a su condición específica.
-
-Consulta Quirúrgica
-
-El neurocirujano revisará su condición, explicará el procedimiento en detalle y responderá cualquier pregunta que pueda tener. Esta es una oportunidad para abordar cualquier inquietud y asegurarse de que comprende completamente qué esperar durante y después de la cirugía.
-
-El Procedimiento
-
-Dependiendo de su procedimiento, será trasladado al quirófano, donde un equipo de profesionales médicos realizará su cirugía. Las principales instalaciones neuroquirúrgicas de Tijuana utilizan equipos y técnicas avanzadas comparables a las que se encuentran en los mejores hospitales de EE. UU.
-
-A lo largo de su tratamiento, el equipo médico lo mantendrá informado sobre cada paso del proceso, asegurándose de que se sienta cómodo y confiado en su atención. Muchas instalaciones también proporcionan actualizaciones regulares a los familiares que esperan durante el procedimiento.
-
-Cuidado Postoperatorio y Recuperación
-
-Estancia Hospitalaria
-
-Será monitoreado(a) de cerca en el hospital durante algunos días, con enfermeras y médicos evaluando regularmente su progreso. La duración de su estancia dependerá de la complejidad de su procedimiento y de su tasa de recuperación individual. Durante este tiempo, el equipo médico monitoreará sus signos vitales, manejará el dolor y vigilará cualquier complicación.
-
-Manejo del Dolor
-
-Recibirá la medicación adecuada para el dolor e instrucciones sobre cómo manejar las molestias durante la recuperación. Los hospitales de Tijuana suelen utilizar protocolos modernos de manejo del dolor que equilibran un alivio efectivo con la minimización de los efectos secundarios y los riesgos de dependencia. Su equipo médico ajustará su plan de manejo del dolor según sus necesidades específicas y su respuesta.
-
-Rehabilitación
-
-Se le puede recomendar terapia física y ocupacional para ayudarle a recuperar fuerza y función. Muchos hospitales de Tijuana cuentan con departamentos de rehabilitación integrales con especialistas experimentados en la recuperación post-neuroquirúrgica. Su plan de rehabilitación se adaptará a su procedimiento específico y a sus objetivos de recuperación.
-
-Antes del alta, recibirá instrucciones detalladas para continuar su recuperación en casa, incluyendo restricciones de actividad, horarios de medicación y signos que justificarían atención médica inmediata. Se programarán citas de seguimiento para monitorear su progreso.
-
-
-        </p>
+        <p class="muted">Un camino claro: evaluación → preparación → tratamiento → recuperación.</p>
 
         <div class="grid2">
           <div class="card">
             <h3>1) Evaluación</h3>
             <ul class="listClean">
-              <li>Revisión médica detallada, estudios necesarios y explicación clara del diagnóstico y las alternativas de tratamiento.</li>
-              <li>Consulta Neurologica </li>
-              <li>El procedimiento </li>
+              <li>Revisión clínica y neurológica.</li>
+              <li>Explicación sencilla del diagnóstico y lo que significa para usted.</li>
+              <li>Plan de estudios (laboratorio e imagen) si se requieren.</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>2) Preparación</h3>
             <ul class="listClean">
-              <li>Indicaciones previas al procedimiento, resolución de dudas y planeación médica para una intervención segura.</li>
-              <li>Consullta neurologica </li>
-              <li>El procedimiento</li>
+              <li>Indicaciones previas claras (medicación, ayuno, estudios).</li>
+              <li>Respuesta a dudas y expectativas realistas.</li>
+              <li>Coordinación con hospital y equipo médico.</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>3) Tratamiento</h3>
             <ul class="listClean">
-              <li>Aplicación del tratamiento o procedimiento indicado, priorizando la seguridad del paciente y las mejores prácticas médicas.</li>
-              <li>Consulta neurologica</li>
-              <li>El procedimiento</li>
+              <li>Se elige el tratamiento adecuado: médico o quirúrgico según su caso.</li>
+              <li>Enfoque en seguridad, técnica y comunicación con usted y su familia.</li>
+              <li>Protocolos modernos de control del dolor y cuidado.</li>
             </ul>
           </div>
 
           <div class="card">
             <h3>4) Recuperación</h3>
             <ul class="listClean">
-              <li>Seguimiento médico, control postoperatorio y recomendaciones para una recuperación adecuada.</li>
-              <li>Consulta neurologica</li>
-              <li>El procedimiento</li>
+              <li>Seguimiento postoperatorio y señales de alarma explicadas.</li>
+              <li>Recomendaciones para actividad, medicación y rehabilitación.</li>
+              <li>Plan de control y acompañamiento.</li>
             </ul>
           </div>
         </div>
 
         <div class="ctaRow" style="margin-top:18px">
           <a class="btn primary" href="#contacto">Quiero agendar</a>
-          <a class="btn ghost" href="#preguntas">Leer preguntas frecuentes</a>
+          <a class="btn ghost" href="#preguntas">Ver preguntas frecuentes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios">
+      <div class="container">
+        <h2>Beneficios</h2>
+        <p class="muted">Atención cercana, comunicación clara y respaldo hospitalario en Tijuana.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Atención personalizada</h3>
+            <p class="muted">En consulta me tomo el tiempo para escuchar, explorar y explicar su diagnóstico y opciones en términos comprensibles.</p>
+          </div>
+
+          <div class="card">
+            <h3>Seguridad y hospital</h3>
+            <p class="muted">Procedimientos en hospitales reconocidos, con protocolos de seguridad y cuidados perioperatorios.</p>
+          </div>
+
+          <div class="card">
+            <h3>Acompañamiento</h3>
+            <p class="muted">Antes y después del tratamiento, usted sabe qué esperar y cómo cuidarse. No lo dejamos con dudas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EL DOCTOR -->
+    <section id="doctor">
+      <div class="container">
+        <h2>Conoce al Dr. José Manuel Segovia</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <img
+              src="/assets/dr-logo.jpg"
+              alt="Dr. José Manuel Segovia, neurocirujano"
+              style="width:100%;max-width:380px;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.12)"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="card">
+            <h3>Calma, claridad y técnica</h3>
+            <p class="muted">
+              En mi consulta busco que usted se sienta cómodo. Primero escucho sus molestias, hago una historia clínica completa y realizo un examen físico y neurológico cuidadoso.
+              Después le explico el diagnóstico y los estudios necesarios para confirmarlo. Con resultados en mano, definimos el tratamiento más adecuado para su caso.
+            </p>
+
+            <ul class="listClean">
+              <li>Médico Cirujano (UNAM).</li>
+              <li>Especialidad en Neurocirugía (IMSS).</li>
+              <li>Práctica privada en Tijuana y Hospital Ángeles (desde 2005).</li>
+            </ul>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="#contacto">Agendar valoración</a>
+              <a class="btn ghost" href="#preguntas">Resolver dudas</a>
+            </div>
+
+            <p class="muted" style="margin-bottom:0">
+              *Si quieres, después creamos una página separada “Currículum” para poner toda la lista larga sin saturar la Home.*
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -494,90 +365,80 @@ Antes del alta, recibirá instrucciones detalladas para continuar su recuperaci�
     <section id="preguntas">
       <div class="container">
         <h2>Preguntas frecuentes</h2>
-        <p class="muted">¿Cómo verifico las credenciales de un cirujano?
-
-Puede verificar las credenciales de un neurocirujano a través del Consejo Mexicano de Cirugía Neurológica y solicitar detalles de su certificación. Además, investigue su trayectoria académica, años de experiencia y reseñas de pacientes. No dude en solicitar una consulta por video antes de tomar su decisión.
-
-¿Qué debo llevar para mi estancia hospitalaria?
-
-Lleve todos sus expedientes médicos, una lista de medicamentos actuales, ropa cómoda, artículos de higiene personal y cualquier dispositivo de asistencia que utilice actualmente. También son importantes sus documentos de identificación, información de seguro si aplica y un método de pago. Considere traer una tableta o un teléfono inteligente para entretenimiento y para mantenerse conectado con su familia.
-
-¿Cuánto tiempo debo permanecer en Tijuana después de la cirugía?
-
-La estancia recomendada varía según su procedimiento, pero generalmente, los pacientes deben planear permanecer en Tijuana de 7 a 14 días después de la neurocirugía. Esto permite la atención postoperatoria inmediata, la extracción de suturas si es necesario y las citas de seguimiento iniciales antes de regresar a casa. Su cirujano le proporcionará recomendaciones específicas basadas en su procedimiento y progreso de recuperación.
-
-¿Qué pasa si surgen complicaciones después de regresar a casa?
-
-Antes de salir de Tijuana, recibirá instrucciones detalladas sobre cómo reconocer posibles complicaciones y cuándo buscar atención médica. El Dr. Segovia permanece disponible para consultas virtuales y puede coordinar con sus proveedores de atención médica locales si es necesario. En algunos casos, los pacientes pueden necesitar regresar a Tijuana para atención de seguimiento, aunque esto es poco común con un cumplimiento postoperatorio adecuado.
-
-¿Tiene preguntas adicionales? Contacte a nuestra coordinadora de pacientes en info@neurocirujanosentijuana.com o llame al 664-635-1809 para asistencia personalizada en su viaje neuroquirúrgico.
-
-
-        </p>
 
         <details>
-          <summary>¿Cómo agendo una evaluación?</summary>
+          <summary>¿Cómo agendo una valoración?</summary>
           <div class="muted" style="margin-top:8px">
-            Puedes comunicarte por teléfono o correo electrónico para agendar una evaluación inicial. Llama al <a href="tel:+16646351809">664-635-1809</a> o escribe a
+            Llame al <a href="tel:+16646351809">664-635-1809</a> o escriba a
             <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a>.
           </div>
         </details>
 
         <details>
           <summary>¿En qué hospital se realizan los procedimientos?</summary>
-          <div class="muted" style="margin-top:8px">Los procedimientos se realizan en hospitales certificados en Tijuana, como Hospital Ángeles Health International. Tambien tenemos otras opciones de acuerdo a las necesidades y presupuesto el paciente.</div>
+          <div class="muted" style="margin-top:8px">
+            Se realizan en hospitales certificados en Tijuana, como Hospital Ángeles. También podemos valorar alternativas según necesidades del paciente.
+          </div>
         </details>
 
         <details>
-          <summary>Puedo agendar en linea</summary>
-          <div class="muted" style="margin-top:8px">Claro, a traves de Doctoralia puedes realizar tu cita. https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.doctoralia.com.mx%2Fjose-manuel-segovia-y-galindo%2Fneurocirujano%2Ftijuana%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExNzZOSjlWMGViYlJXZHhYYnNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR50tApazIF25ttbnP6KjjkQR39NZbWGz40xdbLC57LZnY0-RSio_sU15t_Ihg_aem_lm6d0G9nhtLYjrclEfhg_A%23profile-info&h=AT1--JEGaa2lYBGMMinx3Oej-sQ_HwV2fADSAznioQZNLW2uLSZpwtbNSna7AjMs13OcKNylPLQJWFJJCm1X1qKlrg_9ggqFRpu00ifNEi8Zy5xnjD2awqR4O3I-dQTpeSdVA-keGz9cos6_uUXNOA </div>
+          <summary>¿Atienden pacientes de fuera de la ciudad o del extranjero?</summary>
+          <div class="muted" style="margin-top:8px">
+            Sí. Podemos orientar el proceso para pacientes nacionales e internacionales (documentos, tiempos recomendados de estancia y seguimiento).
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Puedo agendar en línea?</summary>
+          <div class="muted" style="margin-top:8px">
+            Sí. Puede agendar a través de Doctoralia:
+            <a href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana" target="_blank" rel="noopener">Ver perfil en Doctoralia</a>.
+          </div>
         </details>
       </div>
     </section>
 
     <!-- UBICACIÓN -->
-<section id="ubicacion">
-  <div class="container">
-    <h2>Ubicación</h2>
-    <p class="muted">Estamos ubicados en Ave. Paseo de los Héroes 10999 Consultorio 205 en la Torre de consultorios del Hospital Angeles Tijuana. Referencia visual del hospital para que llegues con facilidad.</p>
+    <section id="ubicacion">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <p class="muted">
+          Ave. Paseo de los Héroes 10999, Consultorio 205, Torre de Consultorios – Hospital Ángeles Tijuana, Baja California, México.
+        </p>
 
-    <div class="grid2">
-      <div class="card">
-        <img
-          src="/assets/hospital-1.jpg"
-          alt="Hospital Ángeles Tijuana - Edificio principal"
-          style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
-        />
-      </div>
+        <div class="grid2">
+          <div class="card">
+            <img
+              src="/assets/hospital-1.jpg"
+              alt="Hospital Ángeles Tijuana - Edificio principal"
+              style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
+              loading="lazy"
+            />
+          </div>
 
-      <div class="card">
-        <img
-          src="/assets/Hospital-2.jpg"
-          alt="Hospital Ángeles Health International Tijuana - Entrada"
-          style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
-        />
-      </div>
-    </div>
+          <div class="card">
+            <img
+              src="/assets/Hospital-2.jpg"
+              alt="Hospital Ángeles Health International Tijuana - Entrada"
+              style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
+              loading="lazy"
+            />
+          </div>
+        </div>
 
-    <div class="card" style="margin-top:16px">
-      <h3 style="margin-top:0">Cómo llegar</h3>
-<a
-  class="btn primary"
-  href="https://maps.app.goo.gl/cki792dTpFDTks799"
-  target="_blank"
-  rel="noopener"
->
-  Abrir en Google Maps
-</a>
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="btn primary" href="https://maps.app.goo.gl/cki792dTpFDTks799" target="_blank" rel="noopener">
+            Abrir en Google Maps
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- CONTACTO -->
     <section id="contacto">
       <div class="container">
         <h2>Contacto</h2>
+
         <div class="grid2">
           <div class="card">
             <h3>Agenda tu valoración</h3>
@@ -596,176 +457,16 @@ Antes de salir de Tijuana, recibirá instrucciones detalladas sobre cómo recono
             <h3>Legal</h3>
             <p class="muted">Políticas requeridas para confianza y cumplimiento.</p>
             <ul class="listClean">
-              <li><a href="/politica-de-privacidad.html"Compromiso de Confidencialidad
-
-Protección Total de sus Datos Personales
-
-En la consulta del Dr. José Manuel Segovia y Galindo, respetamos y protegemos su privacidad conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Su información es nuestro compromiso más sagrado.
-
-Implementamos los más altos estándares de seguridad para garantizar que cada dato médico y personal sea tratado con la confidencialidad y el respeto que usted merece. Su confianza es fundamental para nosotros.
-Información que Recopilamos para su Atención
-
-Datos Generales
-
-Nombre completo, fecha de nacimiento, domicilio, teléfono y correo electrónico para mantener comunicación efectiva.
-
-Información Médica Sensible
-
-Historial clínico completo, diagnósticos previos, tratamientos actuales, antecedentes médicos y cualquier dato relacionado con su salud neurológica.
-
-Contactos de Emergencia
-
-Referencias médicas y datos de contacto de emergencia cuando sean proporcionados por usted o su familia.
-
-Uso y Finalidad de su Información
-
-Utilizamos sus datos exclusivamente para brindarle la mejor atención médica especializada en neurocirugía. Cada información recopilada tiene un propósito específico orientado a su bienestar y seguridad.
-
-Atención Médica Especializada
-
-Proveer servicios de neurocirugía de la más alta calidad y tratamientos personalizados según sus necesidades específicas.
-
-Gestión del Expediente Clínico
-
-Elaborar, actualizar y conservar su expediente médico en formato físico o digital con total seguridad y accesibilidad.
-
-Coordinación Multidisciplinaria
-
-Facilitar la comunicación con otros profesionales de la salud cuando su tratamiento lo requiera para resultados óptimos.
-
-Procesos Administrativos
-
-Realizar facturación, cobro y todos los trámites necesarios relacionados con su atención médica de manera eficiente.
-
-Seguimiento Post-Tratamiento
-
-Contactarlo para seguimiento médico, recordatorios de citas y recomendaciones personalizadas para su recuperación.
-
-Cumplimiento Legal
-
-Atender obligaciones legales y normativas vigentes en materia de salud y protección de datos personales.
-
-Máxima Seguridad
-
-Confidencialidad y Protección de sus Datos
-
-Personal Autorizado Exclusivamente
-
-Su información será manejada únicamente por personal médico y administrativo debidamente autorizado, capacitado en protección de datos sensibles.
-
-Medidas de Seguridad Avanzadas
-
-Implementamos protocolos de seguridad físicos, técnicos y administrativos para prevenir accesos no autorizados, pérdida, alteración o uso indebido de su información.
-
-Datos Sensibles Protegidos
-
-La información relacionada con su salud se almacena bajo estándares médicos y legales de máximo nivel, garantizando su integridad y confidencialidad.
-
-Compartición Limitada
-
-No compartiremos sus datos con terceros sin su consentimiento expreso, excepto cuando sea requerido por ley o necesario para su atención médica adecuada.
-
-Sus Derechos sobre sus Datos Personales
-
-Usted tiene control total sobre su información personal. La ley le otorga derechos específicos conocidos como Derechos ARCO que puede ejercer en cualquier momento.
-
-Acceder
-
-Conocer qué datos personales tenemos sobre usted y para qué los utilizamos en su expediente médico.
-
-Rectificar
-
-Solicitar la corrección de su información personal cuando esté desactualizada o sea inexacta.
-
-Cancelar
-
-Solicitar que eliminemos sus datos de nuestros registros cuando considere que no están siendo usados adecuadamente.
-
-Oponerse
-
-Oponerse al tratamiento de sus datos personales para finalidades específicas cuando exista motivo legítimo.
-
-¿Cómo ejercer sus derechos? Contáctenos directamente en la clínica o mediante el correo electrónico proporcionado. Atenderemos su solicitud en los plazos establecidos por la ley, garantizando siempre la protección de su información.
-
-Actualizaciones de esta Política
-
-Nos comprometemos a mantener esta política de privacidad actualizada para reflejar cualquier cambio en la legislación vigente o mejoras en nuestros procesos de protección de datos.
-
-Cualquier modificación será publicada oportunamente en esta página para su conocimiento y consulta. Le recomendamos revisar periódicamente esta política para mantenerse informado sobre cómo protegemos su información.
-
-Su confianza continua es importante para nosotros, por lo que nos esforzamos en mantener la transparencia en todo momento.
-
-Contacto para Consultas y Ejercicio de Derechos
-
-Estamos a su disposición para resolver cualquier duda sobre el manejo de sus datos personales o para ayudarle a ejercer sus derechos ARCO.
-
-Ubicación
-
-Consultorio 205, Hospital Ángeles Tijuana
-
-Baja California, México
-
-Teléfono
-
-Llámenos para agendar cita o resolver dudas
-
-[Número de contacto]
-
-Correo Electrónico
-
-Escríbanos para solicitudes de derechos ARCO
-
-info@neurocirujanosentijuana.com
-
-Nuestro equipo está comprometido con la protección de su privacidad y responderá a sus solicitudes de manera profesional y oportuna.
-
-Confíe en Nosotros para su Salud y Privacidad
-
-Años de Experiencia
-
-Más de cinco décadas dedicadas a la neurocirugía de excelencia en Tijuana
-
-Confidencialidad
-
-Compromiso total con la protección de su información personal y médica
-
-Su bienestar integral y la protección de su información personal son nuestra máxima prioridad. Cada día trabajamos para brindarle no solo la mejor atención médica especializada, sino también la tranquilidad de saber que sus datos están completamente seguros.
-
-Gracias por confiar en el Dr. José Manuel Segovia y Galindo, neurocirujano con trayectoria reconocida y compromiso inquebrantable con sus pacientes.
-
-Solicitar eliminacion de datos Contactar                    /a></li>
-              <li><a href="/condiciones-de-servicio.html">Condiciones de Servicio
-
-Bienvenido/a a nuestros Términos de Servicio. Estos términos rigen su acceso y uso de nuestros servicios. Al acceder o utilizar nuestros servicios, usted acepta estar legalmente vinculado/a por estas condiciones.
-
-1. Aceptación de los Términos
-
-Al acceder y utilizar nuestros servicios, usted confirma que ha leído, comprendido y aceptado cumplir con todos los términos y condiciones aquí establecidos, así como con todas las leyes y regulaciones aplicables.
-
-2. Uso del Servicio
-
-Nuestros servicios se proporcionan para su uso personal y no comercial. Usted acepta no utilizar el servicio para ningún propósito ilegal o prohibido por estos términos. Nos reservamos el derecho de suspender o cancelar su acceso si se detecta un uso indebido.
-
-3. Responsabilidades del Usuario
-
-Usted es responsable de mantener la confidencialidad de su cuenta y contraseña y de todas las actividades que ocurran bajo su cuenta. Se compromete a proporcionar información precisa y completa al registrarse y a actualizarla según sea necesario.
-
-4. Limitación de Responsabilidad
-
-En la máxima medida permitida por la ley, no seremos responsables de ningún daño indirecto, incidental, especial, consecuente o punitivo, o de cualquier pérdida de beneficios o ingresos, ya sea directa o indirectamente, o de cualquier pérdida de datos, uso, buena voluntad u otras pérdidas intangibles, resultantes de (a) su acceso o uso o incapacidad de acceder o usar los servicios; (b) cualquier conducta o contenido de terceros en los servicios.
-
-5. Cambios en los Términos
-
-Nos reservamos el derecho de modificar o reemplazar estos Términos en cualquier momento a nuestra entera discreción. Le notificaremos cualquier cambio sustancial publicando los nuevos términos en esta página. Es su responsabilidad revisar periódicamente estos Términos para estar al tanto de las actualizaciones.
-
-Si tiene alguna pregunta sobre estos Términos de Servicio, no dude en contactarnos.</a></li>
+              <li><a href="/politica-de-privacidad.html">Política de Privacidad</a></li>
+              <li><a href="/condiciones-de-servicio.html">Condiciones de Servicio</a></li>
             </ul>
-            <p class="muted" style="margin-bottom:0">Versión en inglés: <a href="https://neurosurgerytijuana.com/">neurosurgerytijuana.com</a></p>
+            <p class="muted" style="margin-bottom:0">
+              Versión en inglés: <a href="https://neurosurgerytijuana.com/">neurosurgerytijuana.com</a>
+            </p>
           </div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>

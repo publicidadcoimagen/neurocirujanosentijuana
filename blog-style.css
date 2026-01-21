@@ -1,0 +1,91 @@
+:root{
+  --bg:#00002E;
+  --text:#FFFFFF;
+  --muted:rgba(255,255,255,.78);
+  --brand:#F2B42D;
+  --brand2:#48A8E2;
+  --card:rgba(0,0,46,.92);
+  --border:rgba(255,255,255,.12);
+  --radius:16px;
+  --shadow: 0 12px 32px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.65;
+}
+
+a{color:var(--brand2)}
+.container{max-width:980px;margin:0 auto;padding:0 20px}
+
+header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(0,0,46,.88);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 0; gap:14px;
+}
+.brand{
+  display:flex; align-items:center; gap:12px;
+  text-decoration:none; color:inherit;
+}
+.brand img{
+  height:44px;width:44px;border-radius:999px;object-fit:cover;
+  border:1px solid rgba(255,255,255,.25)
+}
+.brand strong{display:block; font-size:14px; letter-spacing:.2px}
+.brand span{display:block; font-size:12px; color:var(--muted)}
+
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+nav a{font-weight:900;text-decoration:none;color:var(--text)}
+nav a:hover{text-decoration:underline}
+
+main{padding:26px 0}
+h1{font-size:38px; line-height:1.12; margin: 10px 0 8px}
+h2{margin:22px 0 10px; font-size:22px}
+p,li{color:var(--muted)}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow: var(--shadow);
+  padding:18px;
+}
+.kicker{color:var(--muted); font-weight:800; letter-spacing:.2px}
+
+.ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 16px; border-radius:12px; border:1px solid var(--border);
+  text-decoration:none; font-weight:900;
+}
+.btn.primary{background:var(--brand); color:#00002E; border-color:var(--brand)}
+.btn.primary:hover{filter:brightness(.95)}
+.btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
+
+.meta{
+  display:flex; gap:12px; flex-wrap:wrap;
+  color:var(--muted); font-size:14px;
+}
+
+footer{
+  border-top:1px solid var(--border);
+  padding:22px 0 34px;
+  color:var(--muted);
+  font-size:14px;
+}
+.footerLinks{display:flex;gap:12px;flex-wrap:wrap}
+hr{border:none;border-top:1px solid var(--border); margin:18px 0}
+
+@media (max-width: 900px){
+  h1{font-size:32px}
+}

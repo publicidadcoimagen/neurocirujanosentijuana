@@ -19,4 +19,11 @@
     <loc>https://neurocirujanosentijuana.com/condiciones-de-servicio.html</loc>
     <priority>0.3</priority>
   </url>
+    <url><loc>https://neurocirujanosentijuana.com/blog.html</loc><priority>0.7</priority></url>
+  <url><loc>https://neurocirujanosentijuana.com/blog/cuando-consultar-neurocirujano.html</loc><priority>0.6</priority></url>
+  <url><loc>https://neurocirujanosentijuana.com/blog/hernia-de-disco-sintomas.html</loc><priority>0.6</priority></url>
+  <url><loc>https://neurocirujanosentijuana.com/blog/dolor-espalda-neurologico.html</loc><priority>0.6</priority></url>
+  <url><loc>https://neurocirujanosentijuana.com/blog/consulta-neuroquirurgica.html</loc><priority>0.6</priority></url>
+  <url><loc>https://neurocirujanosentijuana.com/blog/neurocirugia-en-tijuana.html</loc><priority>0.6</priority></url>
+
 </urlset>

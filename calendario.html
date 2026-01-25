@@ -1,66 +1,79 @@
 <!doctype html>
 <html lang="es-MX">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
   <title>Agendar cita | Dr. José Manuel Segovia</title>
-  <meta name="description" content="Agenda una cita con el Dr. José Manuel Segovia mediante Google Calendar Appointment Scheduling." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://neurocirujanosentijuana.com/calendario.html" />
-  <link rel="stylesheet" href="/blog-style.css" />
+  <meta name="description" content="Agende su valoración con el Dr. José Manuel Segovia mediante nuestro calendario en línea. Seleccione el horario que mejor le convenga.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://neurocirujanosentijuana.com/calendario.html">
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#00002E;
+      color:#fff;
+    }
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:40px 20px;
+    }
+    h1{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+    p{
+      color:rgba(255,255,255,.8);
+      margin-bottom:24px;
+    }
+
+    /* CONTENEDOR DEL CALENDARIO */
+    .calendar-wrapper{
+      background:#ffffff;
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+
+    iframe{
+      width:100%;
+      height:600px;
+      border:0;
+      border-radius:12px;
+      background:#fff;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:24px;
+      color:#F2B42D;
+      text-decoration:none;
+      font-weight:700;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <div class="container">
-    <div class="nav">
-      <a class="brand" href="/">
-        <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" width="44" height="44" loading="lazy" />
-        <div>
-          <strong>Dr. José Manuel Segovia</strong>
-          <span>Neurocirujano en Tijuana</span>
-        </div>
-      </a>
-      <nav aria-label="Navegación">
-        <ul>
-          <li><a href="/">Inicio</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  <main class="container">
+    <h1>Agendar su valoración</h1>
+    <p>
+      Seleccione un horario disponible.  
+      Si tiene dudas, también puede llamar o enviar un correo.
+    </p>
 
-<main>
-  <div class="container" style="padding:26px 0">
-    <div class="kicker">Citas</div>
-    <h1>Agendar cita</h1>
-    <p class="muted">Selecciona un horario disponible. Si tienes dudas, también puedes llamar o enviar un correo.</p>
-
-    <div class="card" style="margin-top:14px">
+    <div class="calendar-wrapper">
+      <!-- Google Calendar Appointment Scheduling -->
       <iframe
-        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1kK5AnHrnrvsPCGIvT07L1uRZD7rK66OmQ5lRfR2gbU8suWURQhBd8N21Gsve-LA0w6clrBkhL?gv=true"
-        style="border:0;width:100%;height:600px"
-        frameborder="0"
-        loading="lazy">
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1kK5AnHrnrvsPCGIvT07L1uRZD7rK66OmQ5lRfR2gbU8suWURQhBd8N21Gsve-LA0w6clrBkhL?gv=true">
       </iframe>
     </div>
 
-    <div class="ctaRow" style="margin-top:16px">
-      <a class="btn primary" href="tel:+16646351809">Llamar</a>
-      <a class="btn ghost" href="/">Volver al inicio</a>
-    </div>
-  </div>
-</main>
+    <a class="back" href="/#contacto">← Volver al sitio</a>
+  </main>
 
-<footer>
-  <div class="container muted" style="padding:22px 0 34px;border-top:1px solid rgba(255,255,255,.12)">
-    © <span id="y"></span> Dr. José Manuel Segovia
-  </div>
-</footer>
-
-<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
-<script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
+  <!-- JOTFORM AI ASSISTANT -->
+  <script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agendar cita | Dr. José Manuel Segovia</title>
+  <meta name="description" content="Agenda una cita con el Dr. José Manuel Segovia mediante Google Calendar Appointment Scheduling." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://neurocirujanosentijuana.com/calendario.html" />
+  <link rel="stylesheet" href="/blog-style.css" />
+</head>
+
+<body>
+<header>
+  <div class="container">
+    <div class="nav">
+      <a class="brand" href="/">
+        <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" width="44" height="44" loading="lazy" />
+        <div>
+          <strong>Dr. José Manuel Segovia</strong>
+          <span>Neurocirujano en Tijuana</span>
+        </div>
+      </a>
+      <nav aria-label="Navegación">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container" style="padding:26px 0">
+    <div class="kicker">Citas</div>
+    <h1>Agendar cita</h1>
+    <p class="muted">Selecciona un horario disponible. Si tienes dudas, también puedes llamar o enviar un correo.</p>
+
+    <div class="card" style="margin-top:14px">
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1kK5AnHrnrvsPCGIvT07L1uRZD7rK66OmQ5lRfR2gbU8suWURQhBd8N21Gsve-LA0w6clrBkhL?gv=true"
+        style="border:0;width:100%;height:600px"
+        frameborder="0"
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="ctaRow" style="margin-top:16px">
+      <a class="btn primary" href="tel:+16646351809">Llamar</a>
+      <a class="btn ghost" href="/">Volver al inicio</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container muted" style="padding:22px 0 34px;border-top:1px solid rgba(255,255,255,.12)">
+    © <span id="y"></span> Dr. José Manuel Segovia
+  </div>
+</footer>
+
+<script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+<script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
+</body>
+</html>

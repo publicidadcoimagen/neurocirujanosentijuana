@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Neurocirujano en Tijuana | Dr. José Manuel Segovia</title>
+  <!-- Meta description acortada (Seobility/SEO) -->
   <meta name="description" content="Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Evaluación clara, opciones de tratamiento y seguimiento. Agenda tu valoración." />
   <meta name="robots" content="index,follow" />
 
@@ -146,6 +147,11 @@
     summary{cursor:pointer; font-weight:900; color:var(--brand)}
     summary::-webkit-details-marker{display:none}
 
+    .socialRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .iconBtn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;border:1px solid var(--border);border-radius:12px;padding:10px 12px;color:var(--text)}
+    .iconBtn svg{width:18px;height:18px;fill:var(--text)}
+    .iconBtn:hover{border-color:rgba(255,255,255,.25)}
+
     footer{
       border-top:1px solid var(--border);
       padding:22px 0 34px;
@@ -181,7 +187,7 @@
     <div class="container">
       <div class="nav">
         <a class="brand" href="/">
-          <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" />
+          <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" width="44" height="44" loading="lazy" />
           <div>
             <strong>Dr. José Manuel Segovia</strong>
             <span>Neurocirujano en Tijuana</span>
@@ -195,6 +201,7 @@
             <li><a href="#preguntas">Preguntas</a></li>
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/calendario.html">Citas</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#doctor">El Doctor</a></li>
           </ul>
@@ -222,17 +229,19 @@
           <div>
             <div class="kicker">Guía para pacientes</div>
             <h1>Su Viaje Neuroquirúrgico en Tijuana</h1>
+
+            <!-- Frase que usa palabras del H1 (Seobility) -->
             <p class="lead">
-              Mi objetivo es que usted entienda su diagnóstico y sus opciones. Aquí le explico, con claridad, qué esperar antes, durante y después de su atención.
+              En <strong>su viaje neuroquirúrgico en Tijuana</strong>, mi objetivo es que usted entienda su diagnóstico y sus opciones. Aquí le explico, con claridad, qué esperar antes, durante y después de su atención.
             </p>
 
             <div class="ctaRow">
-              <a class="btn primary" href="#contacto">Agendar valoración</a>
+              <a class="btn primary" href="/calendario.html">Agendar en calendario</a>
               <a class="btn ghost" href="#proceso">Ver el proceso</a>
             </div>
 
             <div class="mini" aria-label="Datos rápidos">
-              <div class="pill"><strong>Tel:</strong> <a href="tel:+16646351809">664-635-1809</a></div>
+              <div class="pill"><strong>Llamar:</strong> <a href="tel:+16646351809">664-635-1809</a></div>
               <div class="pill"><strong>Email:</strong> <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a></div>
             </div>
 
@@ -290,7 +299,7 @@
         </div>
 
         <div class="ctaRow" style="margin-top:18px">
-          <a class="btn primary" href="#contacto">Quiero agendar</a>
+          <a class="btn primary" href="/calendario.html">Agendar ahora</a>
           <a class="btn ghost" href="#preguntas">Ver preguntas frecuentes</a>
         </div>
       </div>
@@ -347,12 +356,8 @@
 
             <div class="ctaRow">
               <a class="btn primary" href="/curriculum.html">Ver currículum</a>
-              <a class="btn ghost" href="#contacto">Agendar valoración</a>
+              <a class="btn ghost" href="/calendario.html">Agendar cita</a>
             </div>
-
-            <p class="muted" style="margin-bottom:0">
-              Si desea leer mi formación, registros y áreas de atención, lo encontrará en la página de currículum.
-            </p>
           </div>
         </div>
       </div>
@@ -379,11 +384,8 @@
               <li>Estudios previos (resonancia, tomografía, radiografías) y reportes.</li>
               <li>Lista de medicamentos actuales y dosis.</li>
               <li>Antecedentes médicos relevantes y cirugías previas.</li>
-              <li>Preguntas que quiera resolver (las anotamos juntos si lo desea).</li>
+              <li>Preguntas que quiera resolver.</li>
             </ul>
-            <p class="muted" style="margin-bottom:0">
-              Si viene de otra ciudad o del extranjero, le orientamos con tiempos recomendados y seguimiento.
-            </p>
           </div>
         </div>
       </div>
@@ -405,22 +407,15 @@
         <details>
           <summary>¿En qué hospital se realizan los procedimientos?</summary>
           <div class="muted" style="margin-top:8px">
-            Se realizan en hospitales certificados en Tijuana, como Hospital Ángeles. También podemos valorar alternativas según necesidades del paciente.
-          </div>
-        </details>
-
-        <details>
-          <summary>¿Atienden pacientes de fuera de la ciudad o del extranjero?</summary>
-          <div class="muted" style="margin-top:8px">
-            Sí. Podemos orientar el proceso para pacientes nacionales e internacionales (documentos, tiempos recomendados de estancia y seguimiento).
+            Se realizan en hospitales certificados en Tijuana, como Hospital Ángeles.
           </div>
         </details>
 
         <details>
           <summary>¿Puedo agendar en línea?</summary>
           <div class="muted" style="margin-top:8px">
-            Sí. Puede agendar a través de Doctoralia:
-            <a href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana" target="_blank" rel="noopener">Ver perfil en Doctoralia</a>.
+            Sí. Puedes agendar directamente en el calendario:
+            <a href="/calendario.html">Abrir calendario de citas</a>.
           </div>
         </details>
       </div>
@@ -466,31 +461,28 @@
       </div>
     </section>
 
-    <!-- BLOG -->
+    <!-- BLOG TEASERS -->
     <section id="blog">
       <div class="container">
         <h2>Artículos para resolver sus dudas</h2>
-        <p class="muted">
-          Información clara y confiable para pacientes y familiares. Estos artículos no sustituyen
-          una consulta médica, pero le ayudarán a entender mejor sus síntomas y opciones.
-        </p>
+        <p class="muted">Información clara y confiable para pacientes y familiares.</p>
 
         <div class="grid3">
           <div class="card">
             <h3>¿Cuándo consultar a un neurocirujano?</h3>
-            <p class="muted">Señales de alerta y situaciones en las que una valoración especializada puede brindarle tranquilidad.</p>
+            <p class="muted">Señales de alerta y situaciones comunes.</p>
             <a href="/blog/cuando-consultar-neurocirujano.html">Leer artículo →</a>
           </div>
 
           <div class="card">
             <h3>Hernia de disco: síntomas y mitos</h3>
-            <p class="muted">Qué significa realmente el diagnóstico y cuándo se valora tratamiento conservador o quirúrgico.</p>
+            <p class="muted">Qué significa el diagnóstico y opciones.</p>
             <a href="/blog/hernia-de-disco-sintomas.html">Leer artículo →</a>
           </div>
 
           <div class="card">
             <h3>Dolor de espalda: ¿es neurológico?</h3>
-            <p class="muted">Cómo distinguir señales neurológicas y cuándo conviene una evaluación especializada.</p>
+            <p class="muted">Cómo reconocer señales neurológicas.</p>
             <a href="/blog/dolor-espalda-neurologico.html">Leer artículo →</a>
           </div>
         </div>
@@ -510,13 +502,28 @@
           <div class="card">
             <h3>Agenda tu valoración</h3>
             <p class="muted">Elige el canal más cómodo para ti.</p>
+
             <p style="margin:0">
-              <strong>Tel:</strong> <a href="tel:+16646351809">664-635-1809</a><br />
+              <strong>Llamar:</strong> <a href="tel:+16646351809">664-635-1809</a><br />
               <strong>Email:</strong> <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a>
             </p>
+
             <div class="ctaRow">
-              <a class="btn primary" href="tel:+16646351809">Llamar</a>
-              <a class="btn ghost" href="mailto:info@neurocirujanosentijuana.com">Enviar correo</a>
+              <a class="btn primary" href="/calendario.html">Agendar en calendario</a>
+              <a class="btn ghost" href="tel:+16646351809">Llamar</a>
+            </div>
+
+            <!-- Social -->
+            <div class="socialRow" aria-label="Redes sociales">
+              <a class="iconBtn" href="https://www.instagram.com/doctorsegovia?fbclid=IwY2xjawPiegdleHRuA2FlbQIxMABicmlkETFLRDdCejVqNERMMFdZNTdDc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHiWm7Rs01nQPI-x1rUWgGD7Kdg3HYSchLlmwf0di3mIvTZleHqQ13dJ7VUPi_aem_DGlAiu7ZHlciOqe-frMTyg" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm8.7 3.2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
+                Instagram
+              </a>
+
+              <a class="iconBtn" href="https://www.facebook.com/drsegoviaygalindoneurocirugiaHospAngeles/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5H17V5c-.4 0-1.6-.1-3-.1-3 0-4.9 1.8-4.9 5.1V11H6.5v3H9V22h4.5z"/></svg>
+                Facebook
+              </a>
             </div>
           </div>
 
@@ -539,7 +546,7 @@
   <footer>
     <div class="container">
       <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
-        <div>© <span id="y"></span> Dr. José Manuel Segovia. Cirugía de Columna y Cerebro. - Todos los derechos reservados.</div>
+        <div>© <span id="y"></span> Dr. José Manuel Segovia. Todos los derechos reservados.</div>
         <div class="muted">Tijuana, Baja California</div>
       </div>
     </div>
@@ -548,5 +555,8 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
+  <!-- Jotform Assistant (embed at bottom) -->
+  <script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
 </body>
 </html>

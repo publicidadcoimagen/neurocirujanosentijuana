@@ -7,6 +7,7 @@
   <title>Neurocirujano en Tijuana | Dr. José Manuel Segovia</title>
   <meta name="description" content="Atención neuroquirúrgica en Tijuana con el Dr. José Manuel Segovia. Evaluación clara, opciones de tratamiento y seguimiento. Agenda tu valoración." />
   <meta name="robots" content="index,follow" />
+
   <link rel="canonical" href="https://neurocirujanosentijuana.com/" />
 
   <!-- Icons -->
@@ -142,24 +143,7 @@
       padding:12px 14px;
     }
     details + details{margin-top:10px}
-
-    /* ✅ FIX: flecha + wrap + no overflow */
-    summary{
-      cursor:pointer;
-      font-weight:900;
-      color:var(--brand);
-      display:flex;
-      align-items:flex-start;
-      gap:10px;
-      line-height:1.4;
-    }
-    summary::before{
-      content:"▶";
-      flex-shrink:0;
-      margin-top:2px;
-      color:var(--brand);
-    }
-    details[open] summary::before{content:"▼";}
+    summary{cursor:pointer; font-weight:900; color:var(--brand)}
     summary::-webkit-details-marker{display:none}
 
     .socialRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
@@ -245,14 +229,14 @@
             <div class="kicker">Guía para pacientes</div>
             <h1>Su Viaje Neuroquirúrgico en Tijuana</h1>
 
-            <!-- ✅ Seobility fix: usar palabras del H1 -->
+            <!-- Fix Seobility: palabras del H1 presentes en el texto -->
             <p class="lead">
               En <strong>su viaje neuroquirúrgico en Tijuana</strong>, mi objetivo es que usted entienda su diagnóstico y sus opciones.
               Aquí le explico, con claridad, qué esperar antes, durante y después de su atención.
             </p>
 
             <div class="ctaRow">
-              <a class="btn primary" href="/calendario.html">Agendar en calendario</a>
+              <a class="btn primary" href="/calendario.html">Agendar cita en línea</a>
               <a class="btn ghost" href="#proceso">Ver el proceso</a>
             </div>
 
@@ -270,10 +254,263 @@
       </div>
     </section>
 
-    <!-- ✅ IMPORTANTE: aquí puedes dejar tu contenido actual tal cual.
-         No lo vuelvo a pegar para no duplicar 500 líneas, pero este index funciona con tus secciones ya existentes. -->
+    <!-- PROCESO -->
+    <section id="proceso">
+      <div class="container">
+        <h2>Proceso</h2>
+        <p class="muted">Un camino claro: evaluación → preparación → tratamiento → recuperación.</p>
 
-    <!-- CONTACTO (incluye redes + agendar) -->
+        <div class="grid2">
+          <div class="card">
+            <h3>1) Evaluación</h3>
+            <ul class="listClean">
+              <li>Revisión clínica y neurológica.</li>
+              <li>Explicación sencilla del diagnóstico y lo que significa para usted.</li>
+              <li>Plan de estudios (laboratorio e imagen) si se requieren.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>2) Preparación</h3>
+            <ul class="listClean">
+              <li>Indicaciones previas claras (medicación, ayuno, estudios).</li>
+              <li>Respuesta a dudas y expectativas realistas.</li>
+              <li>Coordinación con hospital y equipo médico.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>3) Tratamiento</h3>
+            <ul class="listClean">
+              <li>Se elige el tratamiento adecuado: médico o quirúrgico según su caso.</li>
+              <li>Enfoque en seguridad, técnica y comunicación con usted y su familia.</li>
+              <li>Protocolos modernos de control del dolor y cuidado.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>4) Recuperación</h3>
+            <ul class="listClean">
+              <li>Seguimiento postoperatorio y señales de alarma explicadas.</li>
+              <li>Recomendaciones para actividad, medicación y rehabilitación.</li>
+              <li>Plan de control y acompañamiento.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:18px">
+          <a class="btn primary" href="/calendario.html">Agendar ahora</a>
+          <a class="btn ghost" href="#preguntas">Ver preguntas frecuentes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios">
+      <div class="container">
+        <h2>Beneficios</h2>
+        <p class="muted">Atención cercana, comunicación clara y respaldo hospitalario en Tijuana.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Atención personalizada</h3>
+            <p class="muted">En consulta me tomo el tiempo para escuchar, explorar y explicar su diagnóstico y opciones en términos comprensibles.</p>
+          </div>
+
+          <div class="card">
+            <h3>Seguridad y hospital</h3>
+            <p class="muted">Procedimientos en hospitales reconocidos, con protocolos de seguridad y cuidados perioperatorios.</p>
+          </div>
+
+          <div class="card">
+            <h3>Acompañamiento</h3>
+            <p class="muted">Antes y después del tratamiento, usted sabe qué esperar y cómo cuidarse. No lo dejamos con dudas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR -->
+    <section id="doctor">
+      <div class="container">
+        <h2>Conoce al Dr. José Manuel Segovia</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <img
+              src="/assets/dr-logo.jpg"
+              alt="Dr. José Manuel Segovia, neurocirujano"
+              style="width:100%;max-width:380px;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.12)"
+              loading="lazy"
+              width="600"
+              height="600"
+            />
+          </div>
+
+          <div class="card">
+            <h3>Calma, claridad y técnica</h3>
+            <p class="muted">
+              En mi consulta busco que usted se sienta cómodo. Primero escucho sus molestias, realizo historia clínica y un examen neurológico cuidadoso.
+              Después le explico el diagnóstico de forma clara y el plan de estudios o tratamiento.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn primary" href="/curriculum.html">Ver currículum</a>
+              <a class="btn ghost" href="/calendario.html">Agendar cita</a>
+            </div>
+
+            <p class="muted" style="margin-bottom:0">
+              Si desea leer mi formación, registros y áreas de atención, lo encontrará en la página de currículum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIMERA CITA -->
+    <section id="primera-cita">
+      <div class="container">
+        <h2>Antes de su primera cita</h2>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Cómo trabajo en consulta</h3>
+            <p class="muted">
+              Mi prioridad es que usted se sienta cómodo y pueda entender su diagnóstico sin confusión.
+              En la primera visita escucho sus síntomas, realizo historia clínica y un examen neurológico cuidadoso.
+              Después le explico qué está pasando, qué estudios hacen falta (si aplica) y cuáles son sus opciones de tratamiento.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Qué traer y cómo prepararse</h3>
+            <ul class="listClean">
+              <li>Estudios previos (resonancia, tomografía, radiografías) y reportes.</li>
+              <li>Lista de medicamentos actuales y dosis.</li>
+              <li>Antecedentes médicos relevantes y cirugías previas.</li>
+              <li>Preguntas que quiera resolver.</li>
+            </ul>
+            <p class="muted" style="margin-bottom:0">
+              Si viene de otra ciudad o del extranjero, le orientamos con tiempos recomendados y seguimiento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="preguntas">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+
+        <details>
+          <summary>¿Cómo agendo una valoración?</summary>
+          <div class="muted" style="margin-top:8px">
+            Llame al <a href="tel:+16646351809">664-635-1809</a> o escriba a
+            <a href="mailto:info@neurocirujanosentijuana.com">info@neurocirujanosentijuana.com</a>.
+          </div>
+        </details>
+
+        <details>
+          <summary>¿En qué hospital se realizan los procedimientos?</summary>
+          <div class="muted" style="margin-top:8px">
+            Se realizan en hospitales certificados en Tijuana, como Hospital Ángeles.
+          </div>
+        </details>
+
+        <details>
+          <summary>¿Puedo agendar en línea?</summary>
+          <div class="muted" style="margin-top:8px">
+            Sí. Puedes agendar directamente aquí:
+            <a href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana" target="_blank" rel=noopener">Abrir Doctoralia</a>.
+          </div>
+        </details>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    
+    <!-- UBICACIÓN -->
+    <section id="ubicacion">
+      <div class="container">
+        <h2>Ubicación</h2>
+        <p class="muted">
+          Ave. Paseo de los Héroes 10999, Consultorio 205, Torre de Consultorios – Hospital Ángeles Tijuana, Baja California, México.
+        </p>
+
+        <div class="grid2">
+          <div class="card">
+            <img
+              src="/assets/hospital-1.jpg"
+              alt="Hospital Ángeles Tijuana - Edificio principal"
+              loading="lazy"
+              width="1280"
+              height="853"
+              style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
+            />
+          </div>
+
+          <div class="card">
+            <img
+              src="/assets/Hospital-2.jpg"
+              alt="Hospital Ángeles Health International Tijuana - Entrada"
+              loading="lazy"
+              width="1280"
+              height="853"
+              style="width:100%;height:auto;border-radius:14px;border:1px solid rgba(255,255,255,.12)"
+            />
+          </div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="btn primary" href="https://maps.app.goo.gl/cki792dTpFDTks799" target="_blank" rel="noopener">
+            Abrir en Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG TEASERS -->
+    <section id="blog">
+      <div class="container">
+        <h2>Artículos para resolver sus dudas</h2>
+        <p class="muted">
+          Información clara y confiable para pacientes y familiares. Estos artículos no sustituyen
+          una consulta médica, pero le ayudarán a entender mejor sus síntomas y opciones.
+        </p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>¿Cuándo consultar a un neurocirujano?</h3>
+            <p class="muted">Señales de alerta y situaciones en las que una valoración puede ayudar.</p>
+            <a href="/blog/cuando-consultar-neurocirujano.html">Leer artículo →</a>
+          </div>
+
+          <div class="card">
+            <h3>Hernia de disco: síntomas y mitos</h3>
+            <p class="muted">Qué significa realmente el diagnóstico y cuándo valorar opciones.</p>
+            <a href="/blog/hernia-de-disco-sintomas.html">Leer artículo →</a>
+          </div>
+
+          <div class="card">
+            <h3>Dolor de espalda: ¿es neurológico?</h3>
+            <p class="muted">Cómo distinguir señales neurológicas y cuándo conviene evaluar.</p>
+            <a href="/blog/dolor-espalda-neurologico.html">Leer artículo →</a>
+          </div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="btn ghost" href="/blog.html">Ver todos los artículos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
     <section id="contacto">
       <div class="container">
         <h2>Contacto</h2>
@@ -320,6 +557,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -331,7 +569,10 @@
     </div>
   </footer>
 
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
 
   <!-- Fallback si Jotform no renderiza por configuración -->
   <div id="jf-agent-fallback" style="position:fixed;right:16px;bottom:16px;z-index:9999;display:none">

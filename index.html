@@ -573,24 +573,34 @@
   </script>
 
 
-  <!-- ✅ Jotform Agent: load correctly + reliable fallback -->
-  <div id="jf-agent-fallback" style="position:fixed;right:16px;bottom:16px;z-index:9999;display:none">
-    <a href="#contact" class="btn primary" style="box-shadow:0 12px 32px rgba(0,0,0,.35)">Necesitas ayuda?</a>
-  </div>
+<!-- Jotform Chatbot (Agent) -->
+<script
+  src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"
+  defer
+></script>
 
-  <script defer src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
-  <script>
-    // If the agent doesn't render (domain restrictions / blocked scripts),
-    // we show a visible help button so the page never feels "broken".
-    window.addEventListener("load", function(){
-      setTimeout(function(){
-        // We detect common injected elements. If nothing appears, show fallback.
-        var agentUI = document.querySelector('.jotform-agent, .jf-agent, [data-jf-agent], iframe[src*="jotfor.ms/agent"], iframe[src*="jotfor"]');
-        if(!agentUI){
-          document.getElementById("jf-agent-fallback").style.display = "block";
-        }
-      }, 3000);
-    });
-  </script>
+<!-- Fallback: si el chatbot no renderiza, mostramos un botón de ayuda -->
+<div id="jf-chat-fallback" style="position:fixed;right:16px;bottom:16px;z-index:9999;display:none">
+  <a href="#contact" class="btn primary" style="box-shadow:0 12px 32px rgba(0,0,0,.35)">
+    Need help?
+  </a>
+</div>
+
+<script>
+  // Si el widget no aparece en ~4s, mostramos fallback (por bloqueo, dominios, adblock, etc.)
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      const hasWidget =
+        document.querySelector('iframe[src*="jotfor"]') ||
+        document.querySelector("[data-jf-agent]") ||
+        document.querySelector(".jf-agent") ||
+        document.querySelector(".jotform-agent");
+
+      if (!hasWidget) {
+        document.getElementById("jf-chat-fallback").style.display = "block";
+      }
+    }, 4000);
+  });
+</script>
 </body>
 </html>

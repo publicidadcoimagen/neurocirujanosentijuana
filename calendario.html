@@ -1,84 +1,79 @@
 <!doctype html>
 <html lang="es-MX">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8">
   <title>Agendar cita | Dr. José Manuel Segovia</title>
-  <meta name="description" content="Agenda tu cita con el Dr. José Manuel Segovia, neurocirujano en Tijuana, directamente en línea." />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Agende su valoración con el Dr. José Manuel Segovia mediante nuestro calendario en línea. Seleccione el horario que mejor le convenga.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="canonical" href="https://neurocirujanosentijuana.com/calendar.html" />
-
-  <!-- Icons -->
-  <link rel="icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="canonical" href="https://neurocirujanosentijuana.com/calendario.html">
 
   <style>
-    :root{
-      --bg:#00002E;
-      --text:#FFFFFF;
-      --muted:rgba(255,255,255,.78);
-      --card:rgba(0,0,46,.92);
-      --border:rgba(255,255,255,.12);
-      --radius:16px;
-      --shadow:0 12px 32px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
     body{
       margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      line-height:1.55;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#00002E;
+      color:#fff;
     }
-    .container{max-width:900px;margin:0 auto;padding:40px 20px}
-    h1{margin:0 0 12px;font-size:36px}
-    p{color:var(--muted)}
-    .card{
-      background:var(--card);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:18px;
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:40px 20px;
+    }
+    h1{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+    p{
+      color:rgba(255,255,255,.8);
+      margin-bottom:24px;
+    }
+
+    /* CONTENEDOR DEL CALENDARIO */
+    .calendar-wrapper{
+      background:#ffffff;
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+
+    iframe{
+      width:100%;
+      height:600px;
+      border:0;
+      border-radius:12px;
+      background:#fff;
+    }
+
+    .back{
+      display:inline-block;
+      margin-top:24px;
+      color:#F2B42D;
+      text-decoration:none;
+      font-weight:700;
     }
   </style>
 </head>
 
 <body>
   <main class="container">
-    <h1>Agendar cita</h1>
+    <h1>Agendar su valoración</h1>
     <p>
-      Selecciona el horario disponible para tu consulta con el Dr. José Manuel Segovia.
+      Seleccione un horario disponible.  
+      Si tiene dudas, también puede llamar o enviar un correo.
     </p>
 
-    <div class="card" style="background:#fff;color:#000">
-      <!-- Doctoralia Widget -->
-      <a id="zl-url"
-         class="zl-url"
-         href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana"
-         rel="nofollow"
-         data-zlw-doctor="jose-manuel-segovia-y-galindo"
-         data-zlw-type="big_with_calendar"
-         data-zlw-opinion="false"
-         data-zlw-hide-branding="true"
-         data-zlw-saas-only="true"
-         data-zlw-a11y-title="Widget de reserva de citas médicas">
-         Jose Manuel Segovia y Galindo - Doctoralia.com.mx
-      </a>
+    <div class="calendar-wrapper">
+      <!-- Google Calendar Appointment Scheduling -->
+      <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1kK5AnHrnrvsPCGIvT07L1uRZD7rK66OmQ5lRfR2gbU8suWURQhBd8N21Gsve-LA0w6clrBkhL?gv=true">
+      </iframe>
     </div>
+
+    <a class="back" href="/#contacto">← Volver al sitio</a>
   </main>
 
-  <script>
-  !function($_x,_s,id){
-    var js,fjs=$_x.getElementsByTagName(_s)[0];
-    if(!$_x.getElementById(id)){
-      js = $_x.createElement(_s);
-      js.id = id;
-      js.src = "//platform.docplanner.com/js/widget.js";
-      fjs.parentNode.insertBefore(js,fjs);
-    }
-  }(document,"script","zl-widget-s");
-  </script>
+  <!-- JOTFORM AI ASSISTANT -->
+  <script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>
 </body>
 </html>

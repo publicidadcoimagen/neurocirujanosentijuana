@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Testimonios | Dr. José Manuel Segovia</title>
+  <meta name="description" content="Opiniones y testimonios de pacientes del Dr. José Manuel Segovia (Neurocirujano en Tijuana). Consulta reseñas verificadas y agenda tu cita." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://neurocirujanosentijuana.com/testimonios.html" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Testimonios | Dr. José Manuel Segovia" />
+  <meta property="og:description" content="Opiniones y testimonios de pacientes. Agenda tu cita en línea." />
+  <meta property="og:url" content="https://neurocirujanosentijuana.com/testimonios.html" />
+  <meta property="og:image" content="https://neurocirujanosentijuana.com/og-image.jpg" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es-MX" href="https://neurocirujanosentijuana.com/testimonios.html" />
+  <link rel="alternate" hreflang="en-US" href="https://neurosurgerytijuana.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://neurocirujanosentijuana.com/" />
+
+  <style>
+    :root{
+      --bg:#00002E;
+      --text:#FFFFFF;
+      --muted:rgba(255,255,255,.78);
+      --brand:#F2B42D;
+      --brand2:#48A8E2;
+      --card:rgba(0,0,46,.92);
+      --border:rgba(255,255,255,.12);
+      --radius:16px;
+      --shadow: 0 12px 32px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.55;
+    }
+    a{color:var(--brand2)}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:20px;top:20px;width:auto;height:auto;background:#fff;color:#000;padding:10px;border:1px solid #ddd;border-radius:10px;z-index:999}
+
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(0,0,46,.88);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      text-decoration:none; color:inherit;
+    }
+    .brand img{
+      height:44px;width:44px;border-radius:999px;object-fit:cover;
+      border:1px solid rgba(255,255,255,.25)
+    }
+    .brand strong{display:block; font-size:14px; letter-spacing:.2px}
+    .brand span{display:block; font-size:12px; color:var(--muted)}
+
+    nav ul{list-style:none; margin:0; padding:0; display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    nav a{font-weight:800; text-decoration:none; color:var(--text)}
+    nav a:hover{text-decoration:underline}
+
+    .hero{padding:32px 0 8px;}
+    h1{margin:10px 0 8px; font-size:38px; line-height:1.1}
+    .lead{color:var(--muted); font-size:18px; margin:0 0 14px}
+
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 16px; border-radius:12px; border:1px solid var(--border);
+      text-decoration:none; font-weight:900;
+    }
+    .btn.primary{background:var(--brand); color:#00002E; border-color:var(--brand)}
+    .btn.primary:hover{filter:brightness(.95)}
+    .btn.ghost{background:transparent; color:var(--text); border-color:var(--border)}
+
+    .card{
+      background: var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      padding:18px;
+    }
+    .muted{color:var(--muted)}
+    .grid2{display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap:16px}
+    .grid3{display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:16px}
+    section{padding:18px 0}
+    section h2{font-size:26px; margin:0 0 10px}
+    .divider{border-top:1px solid var(--border); margin:18px 0}
+
+    .quote{
+      font-size:15px;
+      color:var(--muted);
+      margin:0 0 10px;
+    }
+    .who{
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      font-size:13px; color:rgba(255,255,255,.85);
+      border-top:1px solid rgba(255,255,255,.10);
+      padding-top:10px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(255,255,255,.06);
+      border:1px solid var(--border);
+      padding:10px 12px;
+      border-radius:14px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    footer{
+      border-top:1px solid var(--border);
+      padding:22px 0 34px;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width: 920px){
+      h1{font-size:32px}
+      .grid3,.grid2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="/">
+          <img src="/assets/dr-logo.jpg" alt="Dr. José Manuel Segovia" width="44" height="44" loading="lazy" />
+          <div>
+            <strong>Dr. José Manuel Segovia</strong>
+            <span>Neurocirujano en Tijuana</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="/#beneficios">Beneficios</a></li>
+            <li><a href="/#proceso">Proceso</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/calendario.html">Citas</a></li>
+            <li><a href="/#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container">
+        <h1>Testimonios y opiniones de pacientes</h1>
+
+        <p class="lead">
+          Las reseñas son una referencia útil para conocer cómo es la atención. Aquí compartimos extractos breves
+          y un enlace directo a las opiniones verificadas.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="/calendario.html">Agendar cita en línea</a>
+          <a class="btn ghost" href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana" target="_blank" rel="noopener nofollow">Ver reseñas en Doctoralia</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid2" aria-label="Resumen de confianza">
+          <div class="card">
+            <div class="badge">✅ Reseñas verificadas en plataforma externa</div>
+            <p class="muted" style="margin:12px 0 0">
+              En Doctoralia se muestran opiniones y citas verificadas (por ejemplo, se indica “132 opiniones” en el perfil).*
+            </p>
+            <p class="muted" style="margin:10px 0 0;font-size:13px">
+              *La cifra puede cambiar con el tiempo. Consulte el enlace para ver el dato actual.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="badge">🛡️ Privacidad del paciente</div>
+            <p class="muted" style="margin:12px 0 0">
+              Para proteger la privacidad, aquí usamos nombres abreviados o iniciales. Si desea que su testimonio se publique con nombre completo,
+              se requiere autorización explícita.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Extractos (selección breve)</h2>
+        <p class="muted">
+          Los siguientes textos son extractos cortos de opiniones publicadas en Doctoralia. Para leerlas completas, use el enlace oficial.
+        </p>
+
+        <div class="grid3">
+          <div class="card">
+            <p class="quote">“Creo que el profesionalismo, el humanismo y la dedicación describen perfectamente al Dr. Segovia…”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2021</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="quote">“El doctor fue muy amable y paciente en explicar… su diagnóstico y manejo fueron muy acertados…”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2021</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="quote">“Excelente experiencia… alguien nos entendió y dedicó el tiempo necesario…”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2020</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="quote">“Muy buena explicación. Detallada, dedica tiempo suficiente…”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2023</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="quote">“Excelente atención… explicación muy detallada…”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2025</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="quote">“El dr siempre ha mostrado profesionalismo, genera confianza y es exacto en sus diagnósticos.”</p>
+            <div class="who">
+              <span>Paciente (Doctoralia)</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ctaRow" style="margin-top:16px">
+          <a class="btn primary" href="https://www.doctoralia.com.mx/jose-manuel-segovia-y-galindo/neurocirujano/tijuana" target="_blank" rel="noopener nofollow">
+            Ver todas las opiniones en Doctoralia
+          </a>
+          <a class="btn ghost" href="/#contacto">Contactar</a>
+        </div>
+
+        <p class="muted" style="margin-top:14px;font-size:13px">
+          Nota: Los testimonios reflejan experiencias individuales y no garantizan resultados. Cada caso requiere valoración médica.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+        <div>© <span id="y"></span> Dr. José Manuel Segovia. Todos los derechos reservados.</div>
+        <div class="muted">Tijuana, Baja California</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

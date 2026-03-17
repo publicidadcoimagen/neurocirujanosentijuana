@@ -5,86 +5,206 @@
   <title>Agendar cita | Dr. José Manuel Segovia</title>
   <meta name="description" content="Agende su valoración con el Dr. José Manuel Segovia mediante nuestro calendario en línea. Seleccione el horario que mejor le convenga.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="canonical" href="https://neurocirujanosentijuana.com/calendario.html">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-915105ZDJG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-915105ZDJG');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-915105ZDJG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-915105ZDJG');
+  </script>
+
   <style>
+    :root{
+      --bg:#00002E;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.82);
+      --card:#ffffff;
+      --accent:#F2B42D;
+      --accentDark:#d79b1e;
+      --shadow:0 12px 32px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:#00002E;
-      color:#fff;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
     }
+
     .container{
       max-width:1100px;
       margin:0 auto;
-      padding:40px 20px;
+      padding:40px 20px 80px;
     }
+
     h1{
       font-size:34px;
-      margin-bottom:10px;
-    }
-    p{
-      color:rgba(255,255,255,.8);
-      margin-bottom:24px;
+      margin:0 0 10px;
+      line-height:1.15;
     }
 
-    /* CONTENEDOR DEL CALENDARIO */
+    p{
+      color:var(--muted);
+      margin:0 0 24px;
+      line-height:1.7;
+    }
+
+    .microcopy{
+      margin:-4px 0 18px;
+      color:#ffffff;
+      font-weight:700;
+      line-height:1.8;
+      font-size:15px;
+    }
+
     .calendar-wrapper{
-      background:#ffffff;
+      background:var(--card);
       border-radius:16px;
       padding:16px;
-      box-shadow:0 12px 32px rgba(0,0,0,.35);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
-    iframe{
+    .calendar-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:10px 12px;
+      margin-bottom:12px;
+      background:linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      border:1px solid rgba(0,0,0,.08);
+      border-radius:12px;
+      color:#111827;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .calendar-head span{
+      opacity:.8;
+      font-weight:700;
+    }
+
+    .calendar-frame{
       width:100%;
-      height:600px;
+      height:700px;
       border:0;
       border-radius:12px;
       background:#fff;
+      display:block;
+      margin:0 auto;
+      max-width:650px;
+    }
+
+    .trust-note{
+      margin:14px 0 0;
+      text-align:center;
+      color:#1f2937;
+      font-size:13px;
+      font-weight:600;
+      line-height:1.6;
     }
 
     .back{
       display:inline-block;
       margin-top:24px;
-      color:#F2B42D;
+      color:var(--accent);
       text-decoration:none;
       font-weight:700;
+    }
+
+    .back:hover{
+      color:#fff;
+      text-decoration:underline;
+    }
+
+    .sticky-btn{
+      position:fixed;
+      left:16px;
+      right:16px;
+      bottom:16px;
+      z-index:999;
+      display:none;
+      text-align:center;
+      background:linear-gradient(135deg, var(--accent), #ffd36b);
+      color:#111827;
+      text-decoration:none;
+      font-weight:800;
+      padding:14px 18px;
+      border-radius:14px;
+      box-shadow:0 12px 28px rgba(0,0,0,.35);
+    }
+
+    @media (max-width:768px){
+      h1{font-size:28px;}
+      .calendar-frame{
+        height:820px;
+        max-width:100%;
+      }
+      .sticky-btn{
+        display:block;
+      }
+      .container{
+        padding-bottom:110px;
+      }
+    }
+
+    @media (max-width:560px){
+      .calendar-head{
+        flex-direction:column;
+        align-items:flex-start;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
+  <main class="container" id="top">
     <h1>Agendar su valoración</h1>
+
     <p>
-      Seleccione un horario disponible.  
-      Si tiene dudas, también puede llamar o enviar un correo.
+      Seleccione un horario disponible para su cita con el Dr. José Manuel Segovia.
     </p>
 
-    <div class="calendar-wrapper">
+    <div class="microcopy">
+      ✔ Toma menos de 1 minuto<br>
+      ✔ No necesita pago para agendar<br>
+      ✔ Solicitud confidencial
+    </div>
 
-      <iframe 
-  src="https://expedientemedicodrjosemanuelsegovia.abacusai.app/agendar" 
-  width="100%" 
-  height="800" 
-  frameborder="0" 
-  style="border: none; border-radius: 12px; max-width: 600px; margin: 0 auto; display: block;"
-  title="Agendar Cita - Dr. José Manuel Segovia - Neurocirujano en Tijuana"
-  allow="clipboard-write"
-></iframe>
-      
+    <div class="calendar-wrapper">
+      <div class="calendar-head">
+        <div>Agenda en línea</div>
+        <span>Neurocirugía</span>
+      </div>
+
+      <iframe
+        class="calendar-frame"
+        src="https://expedientemedicodrjosemanuelsegovia.abacusai.app/agendar/neurocirugia"
+        width="100%"
+        height="700"
+        style="border:none; border-radius:12px; max-width:650px;"
+        title="Agendar Cita - Neurocirugía">
+      </iframe>
+
+      <p class="trust-note">
+        Pacientes de Tijuana y San Diego confían en nuestra atención. Su información se maneja de forma privada y segura.
+      </p>
+    </div>
+
     <a class="back" href="/#contacto">← Volver al sitio</a>
   </main>
+
+  <a href="#top" class="sticky-btn">Agendar ahora</a>
 
   <!-- JOTFORM AI ASSISTANT -->
   <script src="https://cdn.jotfor.ms/agent/embedjs/019a3268dbe17b5c832b8ce9b508f1d589ea/embed.js"></script>

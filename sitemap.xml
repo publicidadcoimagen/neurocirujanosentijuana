@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- PRINCIPAL -->
   <url>
     <loc>https://neurocirujanosentijuana.com/</loc>
     <priority>1.0</priority>
   </url>
 
+  <!-- PÁGINAS CLAVE -->
   <url>
-    <loc>https://neurocirujanosentijuana.com/curriculum.html</loc>
-    <priority>0.6</priority>
+    <loc>https://neurocirujanosentijuana.com/tratamientos.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neurocirujanosentijuana.com/sintomas.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://neurocirujanosentijuana.com/blog.html</loc>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -17,20 +29,16 @@
   </url>
 
   <url>
-    <loc>https://neurocirujanosentijuana.com/blog.html</loc>
+    <loc>https://neurocirujanosentijuana.com/curriculum.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://neurocirujanosentijuana.com/testimonios.html</loc>
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://neurocirujanosentijuana.com/politica-de-privacidad.html</loc>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
-    <loc>https://neurocirujanosentijuana.com/condiciones-de-servicio.html</loc>
-    <priority>0.3</priority>
-  </url>
-
+  <!-- BLOG -->
   <url>
     <loc>https://neurocirujanosentijuana.com/blog/cuando-consultar-neurocirujano.html</loc>
     <priority>0.6</priority>
@@ -52,64 +60,61 @@
   </url>
 
   <url>
-  <loc>https://neurocirujanosentijuana.com/testimonios.html</loc>
-  <priority>0.6</priority>
-</url>
-  
-  <url>
     <loc>https://neurocirujanosentijuana.com/blog/neurocirugia-en-tijuana.html</loc>
     <priority>0.6</priority>
   </url>
 
+  <!-- TRATAMIENTOS -->
   <url>
-<loc>https://neurocirujanosentijuana.com/tratamientos.html</loc>
-<priority>0.8</priority>
-</url>
-
-<url>
-<loc>https://neurocirujanosentijuana.com/tratamientos/hernia-de-disco-tijuana.html</loc>
-<priority>0.7</priority>
-</url>
+    <loc>https://neurocirujanosentijuana.com/tratamientos/hernia-de-disco-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
   <url>
-<loc>https://neurocirujanosentijuana.com/tratamientos/cirugia-de-columna-tijuana.html</loc>
-<priority>0.7</priority>
-</url>
-
-    <url>
-<loc>https://neurocirujanosentijuana.com/tratamientos/dolor-ciatico-tratamiento-tijuana.html</loc>
-<priority>0.7</priority>
-</url>
-
-    <url>
-<loc>https://neurocirujanosentijuana.com/tratamientos/tumor-cerebral-tratamiento-tijuana.html</loc>
-<priority>0.7</priority>
-</url>
-  
-    <url>
-<loc>https://neurocirujanosentijuana.com/tratamientos/estenosis-espinal-tijuana.html</loc>
-<priority>0.7</priority>
-</url>
+    <loc>https://neurocirujanosentijuana.com/tratamientos/cirugia-de-columna-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
   <url>
-  <loc>https://neurocirujanosentijuana.com/sintomas.html</loc>
-  <priority>0.7</priority>
-</url>
+    <loc>https://neurocirujanosentijuana.com/tratamientos/dolor-ciatico-tratamiento-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
   <url>
-  <loc>https://neurocirujanosentijuana.com/sintomas/dolor-espalda-cuando-ir-neurocirujano.html</loc>
-  <priority>0.7</priority>
-</url>
+    <loc>https://neurocirujanosentijuana.com/tratamientos/estenosis-espinal-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
   <url>
-  <loc>https://neurocirujanosentijuana.com/sintomas/dolor-cabeza-neurologico.html</loc>
-  <priority>0.7</priority>
-</url>
+    <loc>https://neurocirujanosentijuana.com/tratamientos/tumor-cerebral-tratamiento-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
-<url>
-  <loc>https://neurocirujanosentijuana.com/sintomas/hormigueo-piernas-causa-neurologica.html</loc>
-  <priority>0.7</priority>
-</url>
+  <!-- SÍNTOMAS -->
+  <url>
+    <loc>https://neurocirujanosentijuana.com/sintomas/dolor-espalda-cuando-ir-neurocirujano.html</loc>
+    <priority>0.7</priority>
+  </url>
 
-  
+  <url>
+    <loc>https://neurocirujanosentijuana.com/sintomas/dolor-cabeza-neurologico.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://neurocirujanosentijuana.com/sintomas/hormigueo-piernas-causa-neurologica.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- LEGAL -->
+  <url>
+    <loc>https://neurocirujanosentijuana.com/politica-de-privacidad.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://neurocirujanosentijuana.com/condiciones-de-servicio.html</loc>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

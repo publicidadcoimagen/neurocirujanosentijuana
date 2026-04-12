@@ -89,6 +89,40 @@
     <loc>https://neurocirujanosentijuana.com/tratamientos/tumor-cerebral-tratamiento-tijuana.html</loc>
     <priority>0.7</priority>
   </url>
+  
+  <!-- SERVICIOS -->
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/consulta-neurologica-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/consulta-neuroquirurgica-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/cirugia-de-columna-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/compresion-nerviosa-tratamiento-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/dolor-espalda-cronico-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/tumor-cerebral-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/microcirugia-columna-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://neurocirujanosentijuana.com/servicios/microcirugia-tumores-cerebrales-tijuana.html</loc>
+    <priority>0.7</priority>
+  </url>
 
   <!-- SÍNTOMAS -->
   <url>

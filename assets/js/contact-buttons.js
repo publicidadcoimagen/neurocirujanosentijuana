@@ -1,5 +1,3 @@
-El mismo que ya hiciste)
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const buttons = `

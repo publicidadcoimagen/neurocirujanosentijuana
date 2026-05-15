@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  // Detectar si estamos en index
+  const isHome =
+    window.location.pathname === "/" ||
+    window.location.pathname.includes("index.html");
+
+  // Posición dinámica
+  const sidePosition = isHome ? "left:20px;" : "right:20px;";
+
   const buttons = `
   
   <!-- BOTÓN LLAMAR -->
@@ -8,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   style="
     position:fixed;
     bottom:80px;
-    left:20px;
+    ${sidePosition}
     background:#0A84FF;
     color:white;
     padding:12px 16px;
@@ -23,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
   </a>
 
   <!-- BOTÓN WHATSAPP -->
-  <a href="https://wa.me/526642042854"
+  <a href="https://wa.me/5215559404497"
   target="_blank"
   onclick="gtag('event','click_whatsapp',{'event_category':'contact','event_label':'whatsapp'});"
   style="
     position:fixed;
     bottom:20px;
-    left:20px;
+    ${sidePosition}
     background:#25D366;
     color:white;
     padding:12px 16px;

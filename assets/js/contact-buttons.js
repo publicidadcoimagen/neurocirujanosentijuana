@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   </a>
 
   <!-- BOTÓN WHATSAPP -->
-  <a href="https://wa.me/5215559404497"
+  <a href="https://wa.me/15559404497"
   target="_blank"
   onclick="gtag('event','click_whatsapp',{'event_category':'contact','event_label':'whatsapp'});"
   style="

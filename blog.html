@@ -47,6 +47,8 @@
 
   <link rel="stylesheet" href="/blog-style.css" />
 <script defer src="/assets/js/contact-buttons.js"></script>
+  <link rel="stylesheet" href="/assets/mobile-menu.css">
+  <script src="/assets/js/mobile-menu.js" defer></script>
 </head>
 <body>
   <header>
@@ -60,7 +62,8 @@
           </div>
         </a>
 
-        <nav aria-label="Navegación">
+        <button type="button" data-menu-toggle data-open="Abrir menú" data-close="Cerrar menú" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-navigation" hidden><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <nav id="site-navigation" aria-label="Navegación">
           <ul>
             <li><a href="/#proceso">Proceso</a></li>
             <li><a href="/#beneficios">Beneficios</a></li>

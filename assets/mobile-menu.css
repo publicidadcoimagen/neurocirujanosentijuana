@@ -1,0 +1,24 @@
+[data-menu-toggle] { display: none; }
+@media (max-width: 920px) {
+  header .nav:has(> [data-menu-toggle]) { flex-wrap: wrap; }
+  header .nav > .brand { flex: 1; min-width: 0; }
+  header .nav > [data-menu-toggle]:not([hidden]) {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 44px;
+    min-height: 44px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  header .nav > [data-menu-toggle]:not([hidden])[aria-expanded="false"] + nav { display: none; }
+  header .nav > #site-navigation {
+    flex: 1 0 100%;
+    max-height: 65vh;
+    overflow-y: auto;
+  }
+  header .nav > #site-navigation ul { display: grid; gap: 0; }
+  header .nav > #site-navigation a { display: block; padding: 10px 4px; }
+}
